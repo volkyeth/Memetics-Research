@@ -1,7 +1,5 @@
 ---
-title: My GitHub Pages Notebook!
+title: Memetics Research
 ---
 
-Hello world!
-
-Write some words here!
+Root page

@@ -1,0 +1,225 @@
+{
+  "main": {
+    "id": "6255f02e531c64c5",
+    "type": "split",
+    "children": [
+      {
+        "id": "c669cfefa5b2f230",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "47b311fb7b3b9e0d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "source/content/Research Manifesto.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Research Manifesto"
+            }
+          }
+        ]
+      },
+      {
+        "id": "c302b1e957b9ea76",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cc513041a9b56416",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "source/content/index.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "index"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d272a87be6262f65",
+    "type": "split",
+    "children": [
+      {
+        "id": "f46a953403abfa79",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "58567b41fe3475ec",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "b596d79d98cc439f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "c619598ba6a5138a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "97d2bc8aae496fd1",
+    "type": "split",
+    "children": [
+      {
+        "id": "da18aa2c7d12648f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7d81ac7a564b83a0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "source/content/index.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for index"
+            }
+          },
+          {
+            "id": "ab55324e7b125b2f",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "source/content/Book Index.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Book Index"
+            }
+          },
+          {
+            "id": "dc6040dcfdf8350c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "04d924087f1fc73d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "source/content/Book Index.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Book Index"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "47b311fb7b3b9e0d",
+  "lastOpenFiles": [
+    "source/content/index.md",
+    "source/content/Resources.md",
+    "source/content/Research Outline.md",
+    "source/content/Research Manifesto.md",
+    "source/content/Review of Existing Memetic Weaponry.md",
+    "source/README.md",
+    "README.md",
+    "source/content/Egregores.md",
+    "source/content/Egregore Evolution and Control Mechanisms.md",
+    "source/content/Exploration of New Mechanisms for Social Coordination.md",
+    "source/content/Lateral Meme Transfer.md",
+    "source/content/Mapping your Memome.md",
+    "source/content/Idea Dump.md",
+    "source/content/Things to build.md",
+    "source/content/Memetic Immunesystem and Vaccination.md",
+    "source/content/Meme Templates.md",
+    "source/content/Memetic Illnesses.md",
+    "source/content/The Coordination-Alignment Problem.md",
+    "source/content/Algorithmic Meme Streams.md",
+    "source/content/Level 0/WIP Structure.md",
+    "source/content/Memetic Regulators and Meme Expression.md",
+    "source/content/Antimemes.md",
+    "source/content/Cybernice.md",
+    "source/content/Generated Meme Streams.md",
+    "source/content/Human Thought.md",
+    "source/content/Meme Stream Interaction.md",
+    "source/content/Templates",
+    "source/content/Level 2",
+    "source/content/Level 1",
+    "source/content/Level 0",
+    "source/content/questions"
+  ]
+}

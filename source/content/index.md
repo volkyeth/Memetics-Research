@@ -1,5 +1,11 @@
 ---
 title: Memetics Research
 ---
+Welcome to my research page! Treat everything as a WIP.
 
-Root page
+![[Research Outline]]
+
+![[Research Manifesto]]
+
+
+![[Resources]]

@@ -100,8 +100,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 239.50390243530273,
-    "collapsed": true
+    "width": 239.50390243530273
   },
   "right": {
     "id": "97d2bc8aae496fd1",
@@ -194,20 +193,20 @@
   },
   "active": "47b311fb7b3b9e0d",
   "lastOpenFiles": [
-    "source/content/What is a Meme.md",
+    "source/content/Currently Working On.md",
     "source/content/index.md",
+    "source/content/Research Questions.md",
+    "source/content/Research Direction.md",
+    "source/content/What is a Meme.md",
     "source/content/Behaviour - Genetically Emergent, Memeticaly Refined.md",
     "source/content/Research Strategy.md",
     "source/content/My Research.md",
-    "source/content/Research Direction.md",
-    "source/content/Research Questions.md",
     "source/content/Research Manifesto.md",
     "source/content/Foundational Memetics.md",
     "source/content/Epimemetics.md",
     "source/content/Map of Content.md",
     "source/content/Memetics Futurism.md",
     "source/content/Random.md",
-    "source/content/Currently Working On.md",
     "source/content/Fixed Action Patterns.md",
     "source/content/up of Research Outline.md",
     "source/content/Memes I like.md",

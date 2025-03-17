@@ -1,5 +1,6 @@
 [
   "paste-link",
   "dataview",
-  "obsidian-wikipedia"
+  "obsidian-wikipedia",
+  "dataview-serializer"
 ]

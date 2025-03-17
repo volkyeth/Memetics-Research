@@ -3,9 +3,7 @@ title: Memetics Research
 ---
 **Welcome to my research page! Treat everything as a WIP.**
 
-Many pages in the [[Map of Content]] are placeholders for future work.
-
-Checkout my [[Research Manifesto]].
+![[Research Strategy]]
 
 ---
 ![[Currently Working On]]
@@ -16,6 +14,7 @@ Checkout my [[Research Manifesto]].
 
 ---
 
+*(Many pages in the [[Map of Content]] are placeholders for future work.)*
 ![[Map of Content]]
 
 ---

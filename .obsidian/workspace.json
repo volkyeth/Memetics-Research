@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 239.50390243530273
+    "width": 299.50390243530273
   },
   "right": {
     "id": "97d2bc8aae496fd1",
@@ -171,15 +171,16 @@
   },
   "active": "47b311fb7b3b9e0d",
   "lastOpenFiles": [
-    "source/content/Research Strategy.md",
+    "source/content/Research Manifesto.md",
     "source/content/index.md",
     "source/content/Behaviour - Genetically Emergent, Memeticaly Refined.md",
+    "source/content/Foundational Memetics",
+    "source/content/Research Strategy.md",
+    "source/content/What is a Meme.md",
     "source/content/Currently Working On.md",
     "source/content/Research Questions.md",
     "source/content/Research Direction.md",
-    "source/content/What is a Meme.md",
     "source/content/My Research.md",
-    "source/content/Research Manifesto.md",
     "source/content/Foundational Memetics.md",
     "source/content/Epimemetics.md",
     "source/content/Map of Content.md",
@@ -196,7 +197,6 @@
     "source/content/Meme Templates.md",
     "source/content/Egregores and the Noosphere.md",
     "source/content/Nooscope.md",
-    "source/content/Review of Existing Memetic Weaponry.md",
     "source/content/Templates",
     "source/content/Level 2",
     "source/content/Level 1",

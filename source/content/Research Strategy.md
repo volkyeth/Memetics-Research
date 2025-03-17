@@ -1,0 +1,1 @@
+This vault is my attempt to understand the complex eco-system that we call *life*. I am attempting to create a new linguistic frame to explain patterns of complex systems in various domains and scales. In doing so, I aim to develop a theory with predictive power, and defend it through engaging in suitable experimentation to disprove it.

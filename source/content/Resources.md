@@ -9,3 +9,13 @@
 ##### Classes
 - [1. Introduction to Human Behavioral Biology - YouTube](https://www.youtube.com/watch?v=NNnIGh9g6fA&list=PL848F2368C90DDC3D)
 - [Class 1: “What’s Happened to Income & Wealth” by UC Berkeley Professor Reich - YouTube](https://www.youtube.com/watch?v=1f2blKai7HA&list=PLOLArO56vjuoeaIPzKQibBDbx2m_Rfsit)
+
+##### Articles
+- [How Taiwan used memes to fight pandemic rumours](https://govinsider.asia/intl-en/article/audrey-tang-digital-minister-how-taiwan-used-memes-to-fight-pandemic-rumours)
+
+##### Threads 
+- [KNOWLEDGE VACCINES](https://x.com/nosilverv/status/1779851122502492430)
+- https://x.com/Morphenius/status/1874964994674295128?t=5UbasHgm8-71AtC51X_ZgA&s=19
+
+##### TikToks
+- [TikTok - Make Your Day](https://vm.tiktok.com/ZNddDuynb/)

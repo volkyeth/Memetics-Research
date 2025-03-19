@@ -1,5 +1,1 @@
-Depression
-Anxiety
-ADHD
-Autism
-Schizophrenia
+Most if not all mental illnesses can be viewed through the lens of memetics as one or more malfunctioning [[Meme Regulators]].

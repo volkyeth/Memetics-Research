@@ -1,5 +1,3 @@
-[[Meme Replication and Sex]]
-
 input
 output
 conversation

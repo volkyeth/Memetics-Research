@@ -3,6 +3,8 @@ title: Memetics Research
 ---
 **Welcome to my Evergreen Research vault!**
 
+Publicly documenting my curiosity
+
 ![[Research Strategy]]
 
 ---

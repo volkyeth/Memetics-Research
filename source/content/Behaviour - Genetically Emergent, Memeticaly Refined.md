@@ -8,7 +8,7 @@ Behaviours are [[Emergence|emergent]] and [[Evolution|evolving]]. A behaviour is
 
 The expression of these instinctual patterns is exclusively determined by the bird's genes. The behaviour is sort of like a collection of reflexes. A bird that has never seen another bird build a nest will build some kind of nest. Their genome has instructions to build certain neural pathways that encode those action patterns during fetal development. 
 
-Here we see an example of a geno-memetic interaction. Genes encoding Memes.
+Here we see an example of a geno-memetic interaction. Genes giving rise to [[Memes - the Building Blocks of Behaviour|Memes]].
 
 During the lifetime of a bird, it will hone-in (or forget) their nest-building skills. Not only that, if that bird lives in a community, it will mimic and copy techniques. What started as a purely instinctual behaviour, becomes something new through observation and mimicry. The meme is refined, the pathways evolve. 
 
@@ -16,10 +16,12 @@ And here's my question - are these behaviours passed down through genetics or me
 
 The answer has to somehow be both. The genes determine the lose structure of the neural pathways that give a predisposition for certain behaviours. Those neural pathways plus the genetic material and epigenetic factors are a physical manifestation of the meme that exists in the memome of the species. We shall call these - Memes of Genetic Origin. These are memes that even if we took offspring from that species and had it live in isolation away from the group the same behaviours would be observed.
 
-This leads me to the question: Are there Memes of Non-Genetic Origin? These are memes that were they existent in a population, if we took an offspring and had it live in isolation we would not observe the same behaviours.
+This leads me to the question: Are there Memes of Non-Genetic Origin? Memes that are purely socially constructed? These are memes that were they existent in a population, if we took an offspring and had it live in isolation we would not observe the same behaviours.
 
 Questions:
-- How are the physical manifestations of Memes of Genetic Origin created in brains? What came first- the meme or the gene? Is it possible to encode an entirely new instinct or behaviour in genes? #question 
+- How are the physical manifestations of Memes of Genetic Origin created in brains? #question 
+- What is the difference between Memes and [[Fixed Action Patterns]]? #question 
+- What came first- the meme or the gene? Is it possible to encode a socially constructed behaviour in genes? #question 
 - Are there Memes of Non-Genetic Origin? #question 
 
 Research Direction:

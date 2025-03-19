@@ -1,0 +1,1 @@
+Recommendation algorithms are used to shape your attention, AI personas will do exactly the same. you will have your own personal feed of content.

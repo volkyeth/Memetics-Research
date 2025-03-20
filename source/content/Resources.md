@@ -4,6 +4,7 @@
 - [Atomic Habits: Tiny Changes, Remarkable Results by James Clear](https://jamesclear.com/atomic-habits)
 ##### Talks
 - [What Darwin won't tell you about evolution - with Jonathan Pettitt - YouTube](https://www.youtube.com/watch?v=7dzoGb-jcW4)
+- [Susan Blackmore: Genes, Memes and Temes](https://iai.tv/video/genes-memes-and-temes
 ##### Essays
 - [SCP-055 - SCP Foundation](https://scp-wiki.wikidot.com/scp-055)
 ##### Classes
@@ -12,6 +13,7 @@
 
 ##### Articles
 - [How Taiwan used memes to fight pandemic rumours](https://govinsider.asia/intl-en/article/audrey-tang-digital-minister-how-taiwan-used-memes-to-fight-pandemic-rumours)
+- [Defense Against The Super-Worms — LessWrong](https://www.lesswrong.com/posts/fo98oTodEiEy9mLAu/defense-against-the-super-worms)
 
 ##### Threads 
 - [KNOWLEDGE VACCINES](https://x.com/nosilverv/status/1779851122502492430)

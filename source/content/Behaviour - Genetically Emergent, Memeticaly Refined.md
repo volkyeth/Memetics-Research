@@ -22,7 +22,7 @@ Questions:
 - How are the physical manifestations of Memes of Genetic Origin created in brains? #question 
 - What is the difference between Memes and [[Fixed Action Patterns]]? #question 
 - What came first- the meme or the gene? Is it possible to encode a socially constructed behaviour in genes? #question 
-- Are there Memes of Non-Genetic Origin? #question 
+- Are there [[Memes of Non-Genetic Origin]]? #question 
 
 Research Direction:
 - Look into bears teaching cubs how to hunt salmon #look-into

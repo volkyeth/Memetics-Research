@@ -26,3 +26,6 @@ Publicly documenting my curiosity
 ---
 
 ![[Contributions & Feedback]]
+
+---
+![[Partners]]

@@ -4,6 +4,7 @@
 - [[Meme Streams]]
 - [[Meme Stream Interaction]]
 - [[Memetic Regulators and Meme Expression]]
+- [[Cybernetics]]
 - [[Parts]]
 - [[Self]]
 - [[Memetic Evolution]]

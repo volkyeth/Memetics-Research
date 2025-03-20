@@ -6,7 +6,7 @@
       {
         "id": "c669cfefa5b2f230",
         "type": "tabs",
-        "dimension": 45.436766623207305,
+        "dimension": 50.06518904823989,
         "children": [
           {
             "id": "47b311fb7b3b9e0d",
@@ -49,101 +49,44 @@
               "icon": "lucide-file",
               "title": "Euformatics"
             }
+          },
+          {
+            "id": "0fd1b9b7db8a30ce",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "source/content/Research Direction.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Research Direction"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       },
       {
         "id": "5c81df521268fc73",
         "type": "tabs",
-        "dimension": 54.563233376792695,
+        "dimension": 49.93481095176011,
         "children": [
           {
-            "id": "ebb45f1c0fc3ecf6",
+            "id": "798a58d94589b24d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/content/Behaviour - Genetically Emergent, Memeticaly Refined.md",
+                "file": "source/content/Currently Working On.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Behaviour - Genetically Emergent, Memeticaly Refined"
-            }
-          },
-          {
-            "id": "204656d628c490c8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "source/content/Research Strategy.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Research Strategy"
-            }
-          },
-          {
-            "id": "8764d605fade6103",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "source/content/index.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "index"
-            }
-          },
-          {
-            "id": "de5180593e7f32c9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "source/content/Resources.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Resources"
-            }
-          },
-          {
-            "id": "e6726f17f6f2f30e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "source/content/Eumemics.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Eumemics"
-            }
-          },
-          {
-            "id": "fd043e1de94fffb5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "source/content/Memes - the Building Blocks of Behaviour.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Memes - the Building Blocks of Behaviour"
+              "title": "Currently Working On"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -196,8 +139,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -217,7 +159,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/content/index.md",
+                "file": "source/content/Currently Working On.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -227,7 +169,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for index"
+              "title": "Backlinks for Currently Working On"
             }
           },
           {
@@ -265,13 +207,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/content/index.md",
+                "file": "source/content/Currently Working On.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of index"
+              "title": "Outline of Currently Working On"
             }
           }
         ]
@@ -288,39 +230,38 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "breadcrumbs:Breadcrumbs Visualisation": false
+      "command-palette:Open command palette": false
     }
   },
-  "active": "8764d605fade6103",
+  "active": "798a58d94589b24d",
   "lastOpenFiles": [
-    "source/content/Partners.md",
-    "source/content/index.md",
+    "source/content/Research Direction.md",
     "source/content/Currently Working On.md",
+    "source/content/index.md",
+    "source/content/Cybernetics.md",
+    "source/content/Memes - the Building Blocks of Behaviour.md",
+    "source/content/Foundational Memetics.md",
     "source/content/Euformatics.md",
+    "source/content/Eumemics.md",
+    "source/content/Behaviour - Genetically Emergent, Memeticaly Refined.md",
+    "source/content/Research Strategy.md",
+    "source/content/Resources.md",
+    "source/content/Partners.md",
     "source/content/SkyNet.md",
     "source/content/Promemetics.md",
     "source/content/Memes of Non-Genetic Origin.md",
     "source/content/Antimemes.md",
     "source/content/Memetic Regulators and Meme Expression.md",
     "source/content/Propaganda, Eumemics, and Therapy.md",
-    "source/content/Behaviour - Genetically Emergent, Memeticaly Refined.md",
-    "source/content/Memes - the Building Blocks of Behaviour.md",
-    "source/content/Eumemics.md",
     "source/content/Horisontal Meme Transfer.md",
     "Pasted image 20250320095843.png",
-    "source/content/Resources.md",
-    "source/content/Research Strategy.md",
     "source/content/Life.md",
     "source/content/Meme Templates.md",
     "source/content/Research Questions.md",
-    "source/content/Research Direction.md",
-    "source/content/Foundational Memetics.md",
     "source/content/Meme Stream Interaction.md",
     "source/content/Meme Streams.md",
     "source/content/Generated Meme Streams.md",
     "source/content/Algorithmic Meme Recommendation Streams.md",
-    "source/content/Meme Regulators.md",
     "source/content/Foundational Memetics",
     "source/content/Templates",
     "source/content/Level 2",

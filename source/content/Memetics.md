@@ -1,0 +1,1 @@
+Memetics is an attempt to explain complex system patterns in various domains and scales and find a single theory of information evolution. 

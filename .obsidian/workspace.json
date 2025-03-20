@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/content/Currently Working On.md",
+                "file": "source/content/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Currently Working On"
+              "title": "Backlinks for index"
             }
           },
           {
@@ -155,8 +155,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 416.5,
-    "collapsed": true
+    "width": 416.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -168,34 +167,35 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "58567b41fe3475ec",
+  "active": "e03960db4a66ab28",
   "lastOpenFiles": [
-    "source/content/Pasted image 20250320095843.png",
+    "source/content/Garden Weather.md",
     "source/content/index.md",
-    "source/content/Cybernetics.md",
-    "source/content/Memetics.md",
+    "source/content/Fixed Action Patterns.md",
+    "source/content/Map of Content.md",
+    "source/content/Foundational Memetics.md",
     "source/content/Memes - the Building Blocks of Behaviour.md",
-    "source/content/Partners.md",
+    "source/content/Behaviour - Genetically Emergent, Memeticaly Refined.md",
+    "source/content/Meme Templates.md",
+    "source/content/Memetic Processors.md",
+    "source/content/Meme Streams.md",
+    "source/content/Meme Stream Interaction.md",
+    "source/content/Memetic Regulators and Meme Expression.md",
+    "source/content/Self.md",
+    "source/content/IFS Parts, Blending, and Self.md",
+    "source/content/Management Cybernetics.md",
+    "source/content/Psycho-cybernetics.md",
+    "source/content/Cybernetics.md",
+    "source/content/Research Direction.md",
+    "source/content/Contributions & Feedback.md",
+    "source/content/Research Manifesto.md",
     "source/content/Research Strategy.md",
+    "source/content/Pasted image 20250320095843.png",
+    "source/content/Memetics.md",
+    "source/content/Partners.md",
     "source/content/SkyNet.md",
     "source/content/Resources.md",
     "source/content/Euformatics.md",
-    "source/content/Research Direction.md",
-    "source/content/Currently Working On.md",
-    "source/content/Foundational Memetics.md",
-    "source/content/Eumemics.md",
-    "source/content/Behaviour - Genetically Emergent, Memeticaly Refined.md",
-    "source/content/Promemetics.md",
-    "source/content/Memes of Non-Genetic Origin.md",
-    "source/content/Antimemes.md",
-    "source/content/Memetic Regulators and Meme Expression.md",
-    "source/content/Propaganda, Eumemics, and Therapy.md",
-    "source/content/Horisontal Meme Transfer.md",
-    "source/content/Life.md",
-    "source/content/Meme Templates.md",
-    "source/content/Research Questions.md",
-    "source/content/Meme Stream Interaction.md",
-    "source/content/Meme Streams.md",
     "source/content/Foundational Memetics",
     "source/content/Templates",
     "source/content/Level 2",

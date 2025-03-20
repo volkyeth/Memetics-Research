@@ -1,6 +1,6 @@
 - [[Egregores and the Noosphere]]
 - [[Propaganda, Eumemics, and Therapy]]
-- [[Management]]
+- [[Management Cybernetics]]
 - [[Archetypal AI Entities]]
 - [[Review of Existing Memetic Weaponry]]
 - [[Proposals for a Memetic Immune-Defence App Ecosystem]]

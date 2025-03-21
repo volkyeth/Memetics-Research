@@ -63,12 +63,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/content/Map of Content.md",
+                "file": "source/content/Memetic Illnesses.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Map of Content"
+              "title": "Memetic Illnesses"
             }
           },
           {
@@ -160,7 +160,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/content/Map of Content.md",
+                "file": "source/content/Memetic Illnesses.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -170,7 +170,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Map of Content"
+              "title": "Backlinks for Memetic Illnesses"
             }
           },
           {
@@ -235,9 +235,19 @@
   },
   "active": "352f01eee4f1ddbf",
   "lastOpenFiles": [
-    "source/content/Futurism.md",
+    "source/content/How would I do it if I was an ASI.md",
+    "source/content/Foundational Cybernetic Patterns.md",
+    "source/content/Project Proposals for an Open Memetic Immune Ecosystem of Apps.md",
+    "source/content/Map of Content.md",
+    "source/content/Foundational Memetics.md",
     "source/content/index.md",
+    "Memetic Weather Stations.md",
+    "source/content/Memeology.md",
+    "source/content/Memetic Illnesses.md",
+    "source/content/Cybernetics.md",
     "source/content/Foundational Cybernetics.md",
+    "Memeplex.md",
+    "source/content/Futurism.md",
     "source/content/IFS Parts, Blending, and Self.md",
     "source/content/Freudian Psychoanalysis.md",
     "source/content/Jungian Individuation.md",
@@ -249,18 +259,8 @@
     "source/content/References.md",
     "source/content/Research Direction.md",
     "source/content/truth_terminal.md",
-    "source/content/How would I do it if I was an ASI.md",
     "source/content/Resources.md",
-    "source/content/Map of Content.md",
     "source/content/Random.md",
-    "source/content/Internet Meme Library.md",
-    "source/content/Question Car Park.md",
-    "source/content/Project Proposals for an Open Memetic Immune Ecosystem of Apps.md",
-    "source/content/A Memeplex of Cybernetic Patterns for Open Source Decentralised Research & Development Coordination.md",
-    "source/content/Cybernetics.md",
-    "source/content/Foundational Memetics.md",
-    "source/content/Memetic Regulators and Meme Expression.md",
-    "source/content/Eumemics.md",
     "source/content/Pasted image 20250320095843.png",
     "source/content/Foundational Memetics",
     "source/content/Templates",

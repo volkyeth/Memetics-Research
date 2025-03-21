@@ -6,4 +6,6 @@
 >
 > [Wikipedia](https://en.wikipedia.org/wiki/Cybernetics)
 
+[[Foundational Cybernetic Patterns]]
+
 Cybernetics in my view is a subset of memetics that deals with a subset of memes regarding the commanding, alignment and cooperation of behaviours in an ecosystem. In greek, a "κυβερνήτης" (kybernḗtēs) is the person who steers a ship. Also "κυβέρνηση" means "government". So imo, cybernetics points not only to the studying of the feedback loops that lead to memetic evolution, but specifically to the coordination problem, the alignment problem, and all the "-cracies" (democracy, aristocracy, plutocracy etc etc etc) in other words (very very vague analogy that i need to refine incoming) if memetics is the electricity and the logic gates, cybernetics is the turing machine that runs the OS of society.

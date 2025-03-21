@@ -1,4 +1,5 @@
 - [[Cybernetics]]
+	- [[Foundational Cybernetic Patterns]]
 - [[Psycho-cybernetics]]
 	- [[Freudian Psychoanalysis]]
 	- [[Jungian Individuation]]

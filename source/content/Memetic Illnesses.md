@@ -1,1 +1,1 @@
-Most if not all mental illnesses can be viewed through the lens of memetics as one or more malfunctioning [[Meme Regulators]].
+Most if not all mental illnesses can be viewed through the lens of memetics as one or more malfunctioning [[Memetic Regulators and Meme Expression]].

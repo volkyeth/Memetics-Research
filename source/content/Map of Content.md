@@ -2,6 +2,8 @@
 
 ![[Foundational Memetics]]
 
-![[Memetics Futurism]]
+![[Foundational Cybernetics]]
+
+![[Futurism]]
 
 ![[Random]]

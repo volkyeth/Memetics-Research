@@ -17,4 +17,4 @@ All information and its expression is good. Even if the expression of that infor
 
 "How can death ever be good?" you may ask. I personally value life more than anything, but death is often a symbol, a highlight of imbalance in a system. I believe that these radical memes and genes would not evolve or even be expressed were it not for the constant oppression, suffering, and scarcity that the individuals and egregores experience.
 
-Freedom of speech is a kind of [[Promemetics|promemetic]] memetic regulator, but leads to the danger of [[Eumemics|eumemic]] or even [[Antimemes|antimemetic]] memetic regulators evolving. The mitigation to this danger is not restriction of information - its abundance of energy.
+Freedom of speech is a kind of [[Promemetics|promemetic]] memetic regulator, but leads to the danger of [[Eumemics|eumemic]] or even antimemetic memetic regulators evolving. The mitigation to this danger is not restriction of information - its abundance of energy.

@@ -17,7 +17,5 @@
 
 ##### Threads 
 - [KNOWLEDGE VACCINES](https://x.com/nosilverv/status/1779851122502492430)
-- https://x.com/Morphenius/status/1874964994674295128?t=5UbasHgm8-71AtC51X_ZgA&s=19
+- [Michael Smith's overview of memetics.](https://x.com/Morphenius/status/1874964994674295128?t=5UbasHgm8-71AtC51X_ZgA&s=19)
 
-##### TikToks
-- [TikTok - Make Your Day](https://vm.tiktok.com/ZNddDuynb/)

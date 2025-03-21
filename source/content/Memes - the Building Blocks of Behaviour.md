@@ -12,6 +12,8 @@ A meme is the basic unit of mental heredity. There are two kinds of memes. Behav
 # Behaviour Coding Memes
 I see memes I've picked up throughout my life affecting my behaviour at a deeply unconscious level all the time. I sneeze like my dad and I clear my throat like my mum. I sit like my grandfather. When I enter a room I usually greet people with a 🤙 which I picked up from a coworker. 
 # Non-Coding Memes
-One function of non-coding memes act as [[Meme Regulators]]. When is a behaviour applied? You have many memes, many behaviours. There must be an if-this-then-that kind of structure that also is of a memetic nature that can regulate the expression of memes.
+One function of non-coding memes act as [[Memetic Regulators and Meme Expression]]. When is a behaviour applied? You have many memes, many behaviours. There must be an if-this-then-that kind of structure that also is of a memetic nature that can regulate the expression of memes.
 
-
+Questions:
+- What are some example non-coding memes? #question 
+- How do memes spread? #question 

@@ -6,6 +6,7 @@
       {
         "id": "c669cfefa5b2f230",
         "type": "tabs",
+        "dimension": 53.159851301115246,
         "children": [
           {
             "id": "e03960db4a66ab28",
@@ -19,6 +20,69 @@
               },
               "icon": "lucide-file",
               "title": "index"
+            }
+          },
+          {
+            "id": "a79a4752d8a9700f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "source/content/Memetic Regulators and Meme Expression.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Memetic Regulators and Meme Expression"
+            }
+          },
+          {
+            "id": "43acca6afd41b29e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "source/content/Map of Content.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Map of Content"
+            }
+          }
+        ]
+      },
+      {
+        "id": "e82171dd44e0490a",
+        "type": "tabs",
+        "dimension": 46.84014869888476,
+        "children": [
+          {
+            "id": "352f01eee4f1ddbf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "source/content/Map of Content.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Map of Content"
+            }
+          },
+          {
+            "id": "c51bf31386e99e80",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "source/content/How would I do it if I was an ASI.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "How would I do it if I was an ASI"
             }
           }
         ]
@@ -53,7 +117,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "cultural",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,11 +138,13 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 299.50390243530273
+    "width": 299.50390243530273,
+    "collapsed": true
   },
   "right": {
     "id": "97d2bc8aae496fd1",
@@ -94,7 +160,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/content/index.md",
+                "file": "source/content/Map of Content.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +170,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for index"
+              "title": "Backlinks for Map of Content"
             }
           },
           {
@@ -155,7 +221,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 416.5
+    "width": 218.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -167,35 +233,35 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e03960db4a66ab28",
+  "active": "352f01eee4f1ddbf",
   "lastOpenFiles": [
-    "source/content/Garden Weather.md",
+    "source/content/Futurism.md",
     "source/content/index.md",
-    "source/content/Fixed Action Patterns.md",
-    "source/content/Map of Content.md",
-    "source/content/Foundational Memetics.md",
-    "source/content/Memes - the Building Blocks of Behaviour.md",
-    "source/content/Behaviour - Genetically Emergent, Memeticaly Refined.md",
-    "source/content/Meme Templates.md",
-    "source/content/Memetic Processors.md",
-    "source/content/Meme Streams.md",
-    "source/content/Meme Stream Interaction.md",
-    "source/content/Memetic Regulators and Meme Expression.md",
-    "source/content/Self.md",
+    "source/content/Foundational Cybernetics.md",
     "source/content/IFS Parts, Blending, and Self.md",
-    "source/content/Management Cybernetics.md",
-    "source/content/Psycho-cybernetics.md",
-    "source/content/Cybernetics.md",
+    "source/content/Freudian Psychoanalysis.md",
+    "source/content/Jungian Individuation.md",
+    "source/content/Traditional Management.md",
+    "source/content/Agile.md",
+    "source/content/Other Paradigms.md",
+    "source/content/Emergent AI Entities.md",
+    "source/content/Emergent AI Personas.md",
+    "source/content/References.md",
     "source/content/Research Direction.md",
-    "source/content/Contributions & Feedback.md",
-    "source/content/Research Manifesto.md",
-    "source/content/Research Strategy.md",
-    "source/content/Pasted image 20250320095843.png",
-    "source/content/Memetics.md",
-    "source/content/Partners.md",
-    "source/content/SkyNet.md",
+    "source/content/truth_terminal.md",
+    "source/content/How would I do it if I was an ASI.md",
     "source/content/Resources.md",
-    "source/content/Euformatics.md",
+    "source/content/Map of Content.md",
+    "source/content/Random.md",
+    "source/content/Internet Meme Library.md",
+    "source/content/Question Car Park.md",
+    "source/content/Project Proposals for an Open Memetic Immune Ecosystem of Apps.md",
+    "source/content/A Memeplex of Cybernetic Patterns for Open Source Decentralised Research & Development Coordination.md",
+    "source/content/Cybernetics.md",
+    "source/content/Foundational Memetics.md",
+    "source/content/Memetic Regulators and Meme Expression.md",
+    "source/content/Eumemics.md",
+    "source/content/Pasted image 20250320095843.png",
     "source/content/Foundational Memetics",
     "source/content/Templates",
     "source/content/Level 2",

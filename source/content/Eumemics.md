@@ -1,4 +1,4 @@
-i coin eumemics to be the theory that suggests that egregores or collective thought organisms - i.e. culture - can be improved through selective breeding of egregores
+i coin eumemics to be the theory that suggests that egregores or collective thought organisms - i.e. culture - can be improved through selective breeding of egregores and memetic engineering
 
 Think about horisontal gene transfer. there's similar stuff happening in memes - [[Horisontal Meme Transfer|horisontal meme transfer]]. where memes of one culture are transferred into another. (see westernisation of Buddhism)
 

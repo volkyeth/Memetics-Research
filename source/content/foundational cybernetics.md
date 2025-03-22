@@ -7,5 +7,5 @@
 	- [[memetic illnesses]]
 - [[management cybernetics]]
 	- [[traditional management]]
-	- [[agile1]]
+	- [[agile]]
 	- [[other paradigms]]

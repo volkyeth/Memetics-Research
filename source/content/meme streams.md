@@ -1,3 +1,3 @@
-- [[Human Thought]]
-- [[algorithmic meme recommendation streams1]] 
-- [[Generated Meme Streams]]
+- [[human thought]]
+- [[algorithmic meme recommendation streams]] 
+- [[generated meme streams]]

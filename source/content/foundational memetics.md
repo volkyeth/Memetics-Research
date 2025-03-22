@@ -1,5 +1,5 @@
 - [[memes - the building blocks of behaviour]]
-- [[behaviour - genetically emergent, memeticaly refined]]
+- [[geno-memetic interactions]]
 - [[meme templates]]
 - [[meme streams]]
 - [[meme stream interaction]]

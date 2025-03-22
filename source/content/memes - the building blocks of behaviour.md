@@ -15,5 +15,4 @@ I see memes I've picked up throughout my life affecting my behaviour at a deeply
 One function of non-coding memes act as [[memetic regulators and meme expression]]. When is a behaviour applied? You have many memes, many behaviours. There must be an if-this-then-that kind of structure that also is of a memetic nature that can regulate the expression of memes.
 
 Questions:
-- What are some example non-coding memes? #question 
-- How do memes spread? #question 
+- What are some example non-coding memes? How do memes spread? #question 

@@ -14,17 +14,12 @@ During the lifetime of a bird, it will hone-in (or forget) their nest-building s
 
 And here's my question - are these behaviours passed down through genetics or memetics?  
 
-The answer has to somehow be both. The genes determine the lose structure of the neural pathways that give a predisposition for certain behaviours. Those neural pathways plus the genetic material and epigenetic factors are a physical manifestation of the meme that exists in the memome of the species. We shall call these - Memes of Genetic Origin. These are memes that even if we took offspring from that species and had it live in isolation away from the group the same behaviours would be observed.
+The answer has to somehow be both. Memes of Non-Genetic Origin are memes that exist in a population, and an offspring has to learn those behaviours via mimicry and observation.
 
-This leads me to the question: Are there Memes of Non-Genetic Origin? Memes that are purely socially constructed? These are memes that were they existent in a population, if we took an offspring and had it live in isolation we would not observe the same behaviours.
+However - certain behaviours seem to be baked in to organisms. So the genes determine the lose structure of the neural pathways that give a predisposition for certain behaviours. Those neural pathways plus the genetic material and epigenetic factors are a physical manifestation of the meme that exists in the memome of the species. We shall call these - Crystallised Memes. These memes are so beneficial to the organism that they have somehow found a way to survive memetic extinction events via embedding themselves into the genome. These are memes that even if we took offspring from that species and had it live in isolation away from the group the same behaviours would be evolve. 
 
-Questions:
-- How are the physical manifestations of Memes of Genetic Origin created in brains? #question 
-- What is the difference between Memes and [[fixed action patterns]]? #question 
-- What came first- the meme or the gene? Is it possible to encode a socially constructed behaviour in genes? #question 
-- Are there [[Memes of Non-Genetic Origin]]? #question 
+This leads me to the following questions: 
+- How are the physical manifestations of Crystallised Memes created in brains? can beliefs acquired later in life be passed down genetically? How do brains evolve to have reflexes and built in behaviours that are not taught socially? How do we freeze behavioural knowledge into the genome over generations? Is it that those behaviours and instincts are so fundamental to the survival of the organism that the structure of the neural networks that encode them is somehow baked in the genetic and epigenetic material? Where is it encoded? Is there a difference between Crystallised Memes and [[fixed action patterns]]? What came first- the meme or the gene? Is it possible to encode a socially constructed behaviour in genes? #question 
 
 Research Direction:
-- Look into bears teaching cubs how to hunt salmon #look-into
-- Look into bird courtship songs and mating rituals #look-into
-- Look at tool use in the animal kingdom #look-into
+- Look into bears teaching cubs how to hunt salmon. Look into bird courtship songs and mating rituals. Look at tool use in the animal kingdom #look-into

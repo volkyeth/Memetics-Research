@@ -5,6 +5,6 @@ conversing is thinking
 
 the only change is reach and medium
 
-memetic inteligence (see diagram of vector space explanation in drafts #1 notebook)
+memetic intelligence
 - verbal/discrete
 - shaped/fluid 

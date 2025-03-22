@@ -120,12 +120,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/content/Overton window.md",
+                "file": "source/content/overton window.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Overton window"
+              "title": "overton window"
             }
           },
           {
@@ -216,7 +216,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/content/index.md",
+                "file": "source/content/cartography as countermeasure - mapping memetic hyperobjects.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -226,7 +226,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for index"
+              "title": "Backlinks for cartography as countermeasure - mapping memetic hyperobjects"
             }
           },
           {
@@ -289,13 +289,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "604d0759f42546e9",
+  "active": "e84e097dcda77bdb",
   "lastOpenFiles": [
-    "source/content/Resources.md",
+    "source/content/overton window.md",
+    "source/content/cartography as countermeasure - mapping memetic hyperobjects.md",
     "source/content/index.md",
+    "source/content/Resources.md",
     "source/content/Garden Weather.md",
     "source/content/Map of Content.md",
-    "source/content/cartography as countermeasure - mapping memetic hyperobjects.md",
     "source/content/Egregore Evolution and Control Mechanisms.md",
     "source/content/superorganisms, memeplexes, egregores - wtf is all this.md",
     "source/content/memetic weather stations.md",
@@ -317,7 +318,6 @@
     "source/content/nooscope.md",
     "source/content/review of existing memetic weaponry.md",
     "source/content/emergent AI entities.md",
-    "source/content/how would I do it if I was an ASI.md",
     "source/content/Pasted image 20250320095843.png",
     "source/content/Foundational Memetics",
     "source/content/Templates",

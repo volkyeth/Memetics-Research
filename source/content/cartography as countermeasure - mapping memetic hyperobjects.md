@@ -54,7 +54,7 @@ eventually, we'll deploy specialized ai agents with targeted browsing preference
 
 ## the battle for mental sovereignty
 
-as memetic warfare intensifies, techno-capital deploys psychological operations at unprecedented scale. eumemics - the cultivation of only officially approved memes - threatens to narrow and control our collective memome.
+as memetic warfare intensifies, techno-capital deploys psychological operations at unprecedented scale. eumemics - the cultivation of only officially approved memes - threatens to narrow the [[overton window]] and control our collective memome.
 
 our defense lies in perpetual linguistic evolution, maintaining zones of illegibility, and democratizing the tools of memetic analysis. we cannot allow the cartography of collective consciousness to remain exclusively in the hands of those who would manipulate it.
 

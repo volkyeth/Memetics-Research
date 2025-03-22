@@ -1,4 +1,4 @@
-- [[research manifesto]]
+- [[research manifesto1]]
 - [[research strategy]]
 - [[research questions]]
 - [[research direction]]

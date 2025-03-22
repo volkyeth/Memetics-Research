@@ -7,7 +7,7 @@
 | [[Garden Weather]]                                                                                             | 22.03.2025 - 10:33 | 1911       |
 | [[cartography as countermeasure - mapping memetic hyperobjects]] | 22.03.2025 - 11:00 | 1109       |
 | [[research direction]]                                                                                     | 22.03.2025 - 10:27 | 755        |
-| [[research manifesto]]                                                                                     | 22.03.2025 - 10:26 | 743        |
+| [[research manifesto1]]                                                                                   | 22.03.2025 - 10:26 | 743        |
 | [[behaviour - genetically emergent, memeticaly refined]]                 | 22.03.2025 - 10:22 | 713        |
 | [[memes - the building blocks of behaviour]]                                         | 22.03.2025 - 10:21 | 703        |
 | [[cybernetics]]                                                                                                   | 22.03.2025 - 10:23 | 489        |
@@ -22,7 +22,7 @@
 
 | File                                                                                         | Last Modified      |
 | -------------------------------------------------------------------------------------------- | ------------------ |
-| [[why do open research?]]                         | 22.03.2025 - 10:43 |
+| [[why do open research?]]                           | 22.03.2025 - 10:43 |
 | [[can anyone do research?]]                       | 22.03.2025 - 00:29 |
 | [[use of AI for research]]                         | 22.03.2025 - 00:28 |
 | [[memetic evolution]]                                   | 21.03.2025 - 12:25 |
@@ -43,7 +43,7 @@
 
 | File                                                                                         | Last Modified      |
 | -------------------------------------------------------------------------------------------- | ------------------ |
-| [[why do open research?]]                         | 22.03.2025 - 10:43 |
+| [[why do open research?]]                           | 22.03.2025 - 10:43 |
 | [[can anyone do research?]]                       | 22.03.2025 - 00:29 |
 | [[use of AI for research]]                         | 22.03.2025 - 00:28 |
 | [[memetic evolution]]                                   | 21.03.2025 - 12:25 |

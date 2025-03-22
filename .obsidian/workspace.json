@@ -134,12 +134,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/content/why do open research?.md",
+                "file": "source/content/research manifesto1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "why do open research?"
+              "title": "research manifesto1"
             }
           }
         ],
@@ -216,7 +216,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/content/why do open research?.md",
+                "file": "source/content/research manifesto1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -226,7 +226,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for why do open research?"
+              "title": "Backlinks for research manifesto1"
             }
           },
           {
@@ -291,6 +291,7 @@
   },
   "active": "604d0759f42546e9",
   "lastOpenFiles": [
+    "source/content/why do open research?.md",
     "source/content/use of AI for research.md",
     "source/content/truth_terminal.md",
     "source/content/traditional management.md",
@@ -300,7 +301,7 @@
     "source/content/review of existing memetic weaponry.md",
     "source/content/research strategy.md",
     "source/content/research questions.md",
-    "source/content/research manifesto.md",
+    "source/content/research manifesto1.md",
     "source/content/research direction.md",
     "source/content/references.md",
     "source/content/Random.md",
@@ -316,7 +317,6 @@
     "source/content/my research.md",
     "source/content/memetics.md",
     "source/content/memetic weather stations.md",
-    "source/content/memetic regulators and meme expression.md",
     "source/node_modules/tsx/node_modules/@esbuild/linux-ppc64",
     "source/node_modules/tsx/node_modules/@esbuild/linux-mips64el",
     "source/node_modules/tsx/node_modules/@esbuild/linux-loong64",

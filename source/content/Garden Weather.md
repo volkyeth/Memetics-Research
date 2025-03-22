@@ -22,9 +22,9 @@
 
 | File                                                                                         | Last Modified      |
 | -------------------------------------------------------------------------------------------- | ------------------ |
-| [[Why do open research?]]                           | 22.03.2025 - 10:43 |
-| [[Can anyone do research?]]                       | 22.03.2025 - 00:29 |
-| [[Use of AI for Research]]                         | 22.03.2025 - 00:28 |
+| [[why do open research?]]                         | 22.03.2025 - 10:43 |
+| [[can anyone do research?]]                       | 22.03.2025 - 00:29 |
+| [[use of AI for research]]                         | 22.03.2025 - 00:28 |
 | [[memetic evolution]]                                   | 21.03.2025 - 12:25 |
 | [[Freudian psychoanalysis]]                       | 21.03.2025 - 10:05 |
 | [[management cybernetics]]                         | 20.03.2025 - 18:10 |
@@ -33,7 +33,7 @@
 | [[Memes of Non-Genetic Origin]]               | 20.03.2025 - 10:27 |
 | [[Horisontal Meme Transfer]]                     | 20.03.2025 - 10:11 |
 | [[IFS parts, blending, and self]]           | 19.03.2025 - 14:14 |
-| [[The Coordination-Alignment Problem]] | 14.03.2025 - 21:07 |
+| [[the coordination-alignment problem]] | 14.03.2025 - 21:07 |
 | [[Mapping your Memome]]                               | 14.03.2025 - 21:04 |
 <!-- SerializedQuery END -->
 
@@ -43,9 +43,9 @@
 
 | File                                                                                         | Last Modified      |
 | -------------------------------------------------------------------------------------------- | ------------------ |
-| [[Why do open research?]]                           | 22.03.2025 - 10:43 |
-| [[Can anyone do research?]]                       | 22.03.2025 - 00:29 |
-| [[Use of AI for Research]]                         | 22.03.2025 - 00:28 |
+| [[why do open research?]]                         | 22.03.2025 - 10:43 |
+| [[can anyone do research?]]                       | 22.03.2025 - 00:29 |
+| [[use of AI for research]]                         | 22.03.2025 - 00:28 |
 | [[memetic evolution]]                                   | 21.03.2025 - 12:25 |
 | [[Freudian psychoanalysis]]                       | 21.03.2025 - 10:05 |
 | [[management cybernetics]]                         | 20.03.2025 - 18:10 |
@@ -54,6 +54,6 @@
 | [[Memes of Non-Genetic Origin]]               | 20.03.2025 - 10:27 |
 | [[Horisontal Meme Transfer]]                     | 20.03.2025 - 10:11 |
 | [[IFS parts, blending, and self]]           | 19.03.2025 - 14:14 |
-| [[The Coordination-Alignment Problem]] | 14.03.2025 - 21:07 |
+| [[the coordination-alignment problem]] | 14.03.2025 - 21:07 |
 | [[Mapping your Memome]]                               | 14.03.2025 - 21:04 |
 <!-- SerializedQuery END -->

@@ -12,7 +12,7 @@ A new dangerous term has emerged in the field: [[eumemics]]. The cultivation of 
 
 People will only read generated material soon. News filtered through models. Emails filtered and turned into bullet points. Books summarised by models. Even this Manifesto is partly generated. Models have such power over us. Whoever controls the models controls the letters in your typewriter. Humans have one and only one card to play left. Keep evolving language. Find ways to accelerate language evolution faster than the models can keep up. Our last line of defence: Illegibility.
 
-This is an area of research way to big for any single person to explore alone, especially because we need a new working theory asap. I believe that a Memetics and Cybernetics Theory of [[Life]] will be central to the development of Synthetic Intelligent Life and to the understanding of the individual and collective human psyche. We can not build what we do not understand. 
+This is an area of research way to big for any single person to explore alone, especially because we need a new working theory asap. I believe that a Memetics and Cybernetics Theory of [[life]] will be central to the development of Synthetic Intelligent Life and to the understanding of the individual and collective human psyche. We can not build what we do not understand. 
 
 Memetics is the new frontier of science, and battles will be fought around it. The stakes are high. Memetics can be used for evil and it can be used for good.
 

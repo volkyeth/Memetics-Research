@@ -4,7 +4,7 @@
 >
 > [Wikipedia](https://en.wikipedia.org/wiki/Behavior)
 
-Behaviours are [[Emergence|emergent]] and [[Evolution|evolving]]. A behaviour is an adaptive sequence of moves. A behaviour like a bird building a nest is composed by a bundle of [[Fixed Action Patterns|fixed action patterns]] all put together. The pattern to pick up sticks. The pattern to stack them next to each other. The pattern to do that high up in a tree where there are no predators. The pattern to give birth where you are safe.
+Behaviours are [[emergence|emergent]] and [[evolution|evolving]]. A behaviour is an adaptive sequence of moves. A behaviour like a bird building a nest is composed by a bundle of [[fixed action patterns|fixed action patterns]] all put together. The pattern to pick up sticks. The pattern to stack them next to each other. The pattern to do that high up in a tree where there are no predators. The pattern to give birth where you are safe.
 
 The expression of these instinctual patterns is exclusively determined by the bird's genes. The behaviour is sort of like a collection of reflexes. A bird that has never seen another bird build a nest will build some kind of nest. Their genome has instructions to build certain neural pathways that encode those action patterns during fetal development. 
 
@@ -20,7 +20,7 @@ This leads me to the question: Are there Memes of Non-Genetic Origin? Memes that
 
 Questions:
 - How are the physical manifestations of Memes of Genetic Origin created in brains? #question 
-- What is the difference between Memes and [[Fixed Action Patterns]]? #question 
+- What is the difference between Memes and [[fixed action patterns]]? #question 
 - What came first- the meme or the gene? Is it possible to encode a socially constructed behaviour in genes? #question 
 - Are there [[Memes of Non-Genetic Origin]]? #question 
 

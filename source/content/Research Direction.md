@@ -6,7 +6,7 @@
 | [[behaviour - genetically emergent, memeticaly refined]] | Look into bears teaching cubs how to hunt salmon #look-into                                         |
 | [[behaviour - genetically emergent, memeticaly refined]] | Look into bird courtship songs and mating rituals #look-into                                        |
 | [[behaviour - genetically emergent, memeticaly refined]] | Look at tool use in the animal kingdom #look-into                                                   |
-| [[review of existing memetic weaponry]]                                   | [Manufacturing Consent - Wikipedia](https://en.wikipedia.org/wiki/Manufacturing_Consent) #look-into |
+| [[review of existing memetic weaponry]]                                 | [Manufacturing Consent - Wikipedia](https://en.wikipedia.org/wiki/Manufacturing_Consent) #look-into |
 <!-- SerializedQuery END -->
 
 <!-- QueryToSerialize: TABLE L.text as "Question" FROM "source/content" FLATTEN file.lists as L WHERE contains(L.tags, "#question") -->

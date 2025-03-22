@@ -4,7 +4,6 @@
   "newFileFolderPath": "source/content",
   "userIgnoreFilters": [
     "source/quartz/",
-    "source/docs/",
     "source/raw_html/"
   ]
 }

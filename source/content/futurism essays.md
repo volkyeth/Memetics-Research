@@ -6,4 +6,4 @@
 - [[emergent AI entities]]
 - [[review of existing memetic weaponry]]
 - [[project proposals for an open memetic immune ecosystem of apps]]
-- [[a memeplex of cybernetic patterns for open source decentralised research & development coordination]]
+- [[a memeplex of cybernetic patterns for open source decentralised research & development coordination 1]]

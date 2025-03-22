@@ -2,18 +2,18 @@
 <!-- QueryToSerialize: TABLE dateformat(file.mtime, "dd.MM.yyyy - HH:mm") AS "Last Modified", round(file.size / 5) AS "Est. Words" FROM "source/content" WHERE file.size > 0 SORT file.size DESC LIMIT 10 -->
 <!-- SerializedQuery: TABLE dateformat(file.mtime, "dd.MM.yyyy - HH:mm") AS "Last Modified", round(file.size / 5) AS "Est. Words" FROM "source/content" WHERE file.size > 0 SORT file.size DESC LIMIT 10 -->
 
-| File                                                                                                                             | Last Modified      | Est. Words |
-| -------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ---------- |
-| [[Garden Weather]]                                                                             | 21.03.2025 - 09:43 | 1373       |
-| [[Research Manifesto]]                                                                     | 21.03.2025 - 09:00 | 741        |
-| [[Behaviour - Genetically Emergent, Memeticaly Refined]] | 20.03.2025 - 10:17 | 713        |
-| [[Memes - the Building Blocks of Behaviour]]                         | 21.03.2025 - 09:38 | 703        |
-| [[Research Direction]]                                                                     | 21.03.2025 - 09:09 | 594        |
-| [[Cybernetics]]                                                                                   | 20.03.2025 - 17:34 | 482        |
-| [[Euformatics]]                                                                                   | 21.03.2025 - 09:36 | 476        |
-| [[Research Questions]]                                                                     | 20.03.2025 - 14:53 | 305        |
-| [[Resources]]                                                                                       | 20.03.2025 - 09:57 | 296        |
-| [[Fixed Action Patterns]]                                                               | 17.03.2025 - 16:18 | 282        |
+| File                                                                                                                                             | Last Modified      | Est. Words |
+| ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------ | ---------- |
+| [[Garden Weather]]                                                                                             | 22.03.2025 - 10:33 | 1995       |
+| [[cartography as countermeasure - mapping memetic hyperobjects]] | 22.03.2025 - 10:17 | 1130       |
+| [[research direction]]                                                                                     | 22.03.2025 - 10:27 | 755        |
+| [[research manifesto]]                                                                                     | 22.03.2025 - 10:26 | 743        |
+| [[behaviour - genetically emergent, memeticaly refined]]                 | 22.03.2025 - 10:22 | 713        |
+| [[memes - the building blocks of behaviour]]                                         | 22.03.2025 - 10:21 | 703        |
+| [[cybernetics]]                                                                                                   | 22.03.2025 - 10:23 | 489        |
+| [[euformatics]]                                                                                                   | 22.03.2025 - 10:21 | 476        |
+| [[research questions]]                                                                                     | 22.03.2025 - 10:27 | 468        |
+| [[references]]                                                                                                     | 22.03.2025 - 10:27 | 298        |
 <!-- SerializedQuery END -->
 
 #### 🌦️ Weather (Most Recent Entries)
@@ -22,15 +22,17 @@
 
 | File                                                                                                                                                                                                                           | Last Modified      |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------ |
-| [[Management Cybernetics]]                                                                                                                                                           | 20.03.2025 - 18:10 |
-| [[Psycho-cybernetics]]                                                                                                                                                                   | 20.03.2025 - 18:10 |
-| [[Promemetics]]                                                                                                                                                                                 | 20.03.2025 - 10:42 |
+| [[Can anyone do research?]]                                                                                                                                                         | 22.03.2025 - 00:29 |
+| [[Use of AI for Research]]                                                                                                                                                           | 22.03.2025 - 00:28 |
+| [[memetic evolution]]                                                                                                                                                                     | 21.03.2025 - 12:25 |
+| [[Freudian psychoanalysis]]                                                                                                                                                         | 21.03.2025 - 10:05 |
+| [[management cybernetics]]                                                                                                                                                           | 20.03.2025 - 18:10 |
+| [[psycho-cybernetics]]                                                                                                                                                                   | 20.03.2025 - 18:10 |
+| [[promemetics]]                                                                                                                                                                                 | 20.03.2025 - 10:42 |
 | [[Memes of Non-Genetic Origin]]                                                                                                                                                 | 20.03.2025 - 10:27 |
 | [[Horisontal Meme Transfer]]                                                                                                                                                       | 20.03.2025 - 10:11 |
-| [[IFS Parts, Blending, and Self]]                                                                                                                                             | 19.03.2025 - 14:14 |
-| [[Evolution]]                                                                                                                                                                                     | 17.03.2025 - 16:21 |
-| [[A Memeplex of Cybernetic Patterns for Open Source Decentralised Research & Development Coordination]] | 17.03.2025 - 09:47 |
-| [[Review of Existing Memetic Weaponry]]                                                                                                                                 | 15.03.2025 - 13:35 |
+| [[IFS parts, blending, and self]]                                                                                                                                             | 19.03.2025 - 14:14 |
+| [[a memeplex of cybernetic patterns for open source decentralised research & development coordination]] | 17.03.2025 - 09:47 |
 | [[Egregore Evolution and Control Mechanisms]]                                                                                                                     | 14.03.2025 - 21:18 |
 | [[The Coordination-Alignment Problem]]                                                                                                                                   | 14.03.2025 - 21:07 |
 | [[Mapping your Memome]]                                                                                                                                                                 | 14.03.2025 - 21:04 |
@@ -42,15 +44,17 @@
 
 | File                                                                                                                                                                                                                           | Last Modified      |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------ |
-| [[Management Cybernetics]]                                                                                                                                                           | 20.03.2025 - 18:10 |
-| [[Psycho-cybernetics]]                                                                                                                                                                   | 20.03.2025 - 18:10 |
-| [[Promemetics]]                                                                                                                                                                                 | 20.03.2025 - 10:42 |
+| [[Can anyone do research?]]                                                                                                                                                         | 22.03.2025 - 00:29 |
+| [[Use of AI for Research]]                                                                                                                                                           | 22.03.2025 - 00:28 |
+| [[memetic evolution]]                                                                                                                                                                     | 21.03.2025 - 12:25 |
+| [[Freudian psychoanalysis]]                                                                                                                                                         | 21.03.2025 - 10:05 |
+| [[management cybernetics]]                                                                                                                                                           | 20.03.2025 - 18:10 |
+| [[psycho-cybernetics]]                                                                                                                                                                   | 20.03.2025 - 18:10 |
+| [[promemetics]]                                                                                                                                                                                 | 20.03.2025 - 10:42 |
 | [[Memes of Non-Genetic Origin]]                                                                                                                                                 | 20.03.2025 - 10:27 |
 | [[Horisontal Meme Transfer]]                                                                                                                                                       | 20.03.2025 - 10:11 |
-| [[IFS Parts, Blending, and Self]]                                                                                                                                             | 19.03.2025 - 14:14 |
-| [[Evolution]]                                                                                                                                                                                     | 17.03.2025 - 16:21 |
-| [[A Memeplex of Cybernetic Patterns for Open Source Decentralised Research & Development Coordination]] | 17.03.2025 - 09:47 |
-| [[Review of Existing Memetic Weaponry]]                                                                                                                                 | 15.03.2025 - 13:35 |
+| [[IFS parts, blending, and self]]                                                                                                                                             | 19.03.2025 - 14:14 |
+| [[a memeplex of cybernetic patterns for open source decentralised research & development coordination]] | 17.03.2025 - 09:47 |
 | [[Egregore Evolution and Control Mechanisms]]                                                                                                                     | 14.03.2025 - 21:18 |
 | [[The Coordination-Alignment Problem]]                                                                                                                                   | 14.03.2025 - 21:07 |
 | [[Mapping your Memome]]                                                                                                                                                                 | 14.03.2025 - 21:04 |

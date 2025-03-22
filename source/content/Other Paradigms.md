@@ -1,3 +1,3 @@
-Spotify Model
-Reinventing Organizations
-Sociocracy
+spotify Model
+reinventing organizations
+sociocracy

@@ -1,2 +1,2 @@
-[[Euformatics]]
-[[Eumemics]]
+[[euformatics]]
+[[eumemics]]

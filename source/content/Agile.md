@@ -1,3 +1,3 @@
-Kanban
-Scrum
-Scaled Agile Frameworks
+kanban
+scrum
+scaled agile frameworks

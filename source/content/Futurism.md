@@ -1,6 +1,0 @@
-- [[Egregores and the Noosphere]]
-- [[Propaganda, Eumemics, and Therapy]]
-- [[Emergent AI Entities]]
-- [[Review of Existing Memetic Weaponry]]
-- [[Project Proposals for an Open Memetic Immune Ecosystem of Apps]]
-- [[A Memeplex of Cybernetic Patterns for Open Source Decentralised Research & Development Coordination]]

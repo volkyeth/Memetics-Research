@@ -1,9 +1,9 @@
-![[My Research]]
+![[my research]]
 
-![[Foundational Memetics]]
+![[foundational memetics]]
 
-![[Foundational Cybernetics]]
+![[foundational cybernetics]]
 
-![[Futurism]]
+![[futurism essays]]
 
 ![[Random]]

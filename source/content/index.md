@@ -3,9 +3,9 @@ title: Emergent Research
 ---
 **Welcome to my research vault!**
 
-This open source cooperative digital garden is my attempt to satisfy my curiosity regarding the complex fractal eco-system that we call *[[Life|life]]*. I am attempting to unify the fields of biology, psychology, and sociology by contributing to the refinement of two new linguistic frames/scientific fields: [[Memetics]] and [[Cybernetics]].
+This open source cooperative digital garden is my attempt to satisfy my curiosity regarding the complex fractal eco-system that we call *[[Life|life]]*. I am attempting to unify the fields of biology, psychology, and sociology by contributing to the refinement of two new linguistic frames/scientific fields: [[Memetics]] and [[cybernetics]].
 
-For more information regarding my long term motivations (besides innate curiosity) checkout my [[Research Manifesto]] and [[Research Strategy]], and to find out where I'm taking my research next checkout my [[Research Direction]] and my [[Map of Content]].
+For more information regarding my long term motivations (besides innate curiosity) checkout my [[research manifesto]] and [[research strategy]], and to find out where I'm taking my research next checkout my [[research direction]] and my [[Map of Content]].
 
 This research is done in partnership with the [Open Research Institute](https://open-research-institute.github.io/)
 
@@ -16,9 +16,9 @@ This research is done in partnership with the [Open Research Institute](https://
 ---
 ![[Garden Weather]]
 
-![[Research Questions]]
+![[research questions]]
 
-![[Research Direction]]
+![[research direction]]
 
 ---
 

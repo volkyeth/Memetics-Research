@@ -1,3 +1,3 @@
-[[Nooscope]]
-[[Memetic Weather Stations]]
-[[Inference Monitoring]]
+[[nooscope]]
+[[memetic weather stations]]
+[[inference monitoring]]

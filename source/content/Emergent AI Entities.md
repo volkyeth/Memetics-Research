@@ -1,3 +1,3 @@
-[[Emergent AI Personas]]
+[[emergent AI personas]]
 [[truth_terminal]]
-[[How would I do it if I was an ASI]]
+[[how would I do it if I was an ASI]]

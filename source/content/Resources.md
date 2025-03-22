@@ -4,7 +4,7 @@
 - [Atomic Habits: Tiny Changes, Remarkable Results by James Clear](https://jamesclear.com/atomic-habits)
 ##### Talks
 - [What Darwin won't tell you about evolution - with Jonathan Pettitt - YouTube](https://www.youtube.com/watch?v=7dzoGb-jcW4)
-- [Susan Blackmore: Genes, Memes and Temes](https://iai.tv/video/genes-memes-and-temes
+- [Susan Blackmore: Genes, Memes and Temes](https://iai.tv/video/genes-memes-and-temes)
 ##### Essays
 - [SCP-055 - SCP Foundation](https://scp-wiki.wikidot.com/scp-055)
 ##### Classes

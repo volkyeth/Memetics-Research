@@ -8,7 +8,7 @@ Behaviours are [[Emergence|emergent]] and [[Evolution|evolving]]. A behaviour is
 
 The expression of these instinctual patterns is exclusively determined by the bird's genes. The behaviour is sort of like a collection of reflexes. A bird that has never seen another bird build a nest will build some kind of nest. Their genome has instructions to build certain neural pathways that encode those action patterns during fetal development. 
 
-Here we see an example of a geno-memetic interaction. Genes giving rise to [[Memes - the Building Blocks of Behaviour|Memes]].
+Here we see an example of a geno-memetic interaction. Genes giving rise to [[memes - the building blocks of behaviour|Memes]].
 
 During the lifetime of a bird, it will hone-in (or forget) their nest-building skills. Not only that, if that bird lives in a community, it will mimic and copy techniques. What started as a purely instinctual behaviour, becomes something new through observation and mimicry. The meme is refined, the pathways evolve. 
 

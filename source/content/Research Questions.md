@@ -3,8 +3,12 @@
 
 | File                                                                                                                             | Question                                                                                                             |
 | -------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| [[Behaviour - Genetically Emergent, Memeticaly Refined]] | How are the physical manifestations of Memes of Genetic Origin created in brains? #question                          |
-| [[Behaviour - Genetically Emergent, Memeticaly Refined]] | What is the difference between Memes and [[Fixed Action Patterns]]? #question                                        |
-| [[Behaviour - Genetically Emergent, Memeticaly Refined]] | What came first- the meme or the gene? Is it possible to encode a socially constructed behaviour in genes? #question |
-| [[Behaviour - Genetically Emergent, Memeticaly Refined]] | Are there [[Memes of Non-Genetic Origin]]? #question                                                                 |
+| [[behaviour - genetically emergent, memeticaly refined]] | How are the physical manifestations of Memes of Genetic Origin created in brains? #question                          |
+| [[behaviour - genetically emergent, memeticaly refined]] | What is the difference between Memes and [[Fixed Action Patterns]]? #question                                        |
+| [[behaviour - genetically emergent, memeticaly refined]] | What came first- the meme or the gene? Is it possible to encode a socially constructed behaviour in genes? #question |
+| [[behaviour - genetically emergent, memeticaly refined]] | Are there [[Memes of Non-Genetic Origin]]? #question                                                                 |
+| [[memes - the building blocks of behaviour]]                         | What are some example non-coding memes? #question                                                                    |
+| [[memes - the building blocks of behaviour]]                         | How do memes spread? #question                                                                                       |
+| [[question car park]]                                                                       | Can Cybernetic Processes be viewed as Memes? #question                                                               |
+| [[question car park]]                                                                       | How can we categorise Memes based on complexity? e.g. Complicated vs Complex Memes #question                         |
 <!-- SerializedQuery END -->

@@ -134,12 +134,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/content/index.md",
+                "file": "source/content/a memeplex of cybernetic patterns for open source decentralised research & development coordination.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "a memeplex of cybernetic patterns for open source decentralised research & development coordination"
             }
           }
         ],
@@ -216,7 +216,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/content/cartography as countermeasure - mapping memetic hyperobjects.md",
+                "file": "source/content/a memeplex of cybernetic patterns for open source decentralised research & development coordination.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -226,7 +226,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for cartography as countermeasure - mapping memetic hyperobjects"
+              "title": "Backlinks for a memeplex of cybernetic patterns for open source decentralised research & development coordination"
             }
           },
           {
@@ -289,11 +289,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e84e097dcda77bdb",
+  "active": "604d0759f42546e9",
   "lastOpenFiles": [
-    "source/content/overton window.md",
-    "source/content/cartography as countermeasure - mapping memetic hyperobjects.md",
     "source/content/index.md",
+    "source/content/cartography as countermeasure - mapping memetic hyperobjects.md",
+    "source/content/eumemics.md",
+    "source/content/overton window.md",
     "source/content/Resources.md",
     "source/content/Garden Weather.md",
     "source/content/Map of Content.md",
@@ -317,7 +318,6 @@
     "source/content/project proposals for an open memetic immune ecosystem of apps.md",
     "source/content/nooscope.md",
     "source/content/review of existing memetic weaponry.md",
-    "source/content/emergent AI entities.md",
     "source/content/Pasted image 20250320095843.png",
     "source/content/Foundational Memetics",
     "source/content/Templates",

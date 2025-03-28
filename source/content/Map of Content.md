@@ -1,9 +1,7 @@
 ![[my research]]
 
-![[foundational memetics]]
+![[somewhat watered essay seeds]]
 
-![[foundational cybernetics]]
+![[random]]
 
-![[futurism essays]]
-
-![[Random]]
+*also see [[map of future content]]*

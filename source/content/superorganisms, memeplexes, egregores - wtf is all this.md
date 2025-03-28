@@ -1,1 +1,0 @@
-imo these all point towards the same thing. we can refine the definitions to usefully create semantic pointers towards different parts of the thing.

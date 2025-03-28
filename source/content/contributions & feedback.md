@@ -1,1 +1,0 @@
-Interested in joining the research? Reach out to me via [twitter](https://x.com/emergentvibe)

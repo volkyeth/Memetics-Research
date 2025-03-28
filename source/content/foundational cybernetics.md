@@ -1,6 +1,7 @@
 - [[cybernetics]]
 	- [[foundational cybernetic patterns]]
 - [[psycho-cybernetics]]
+	- [[self as memome]]
 	- [[Freudian psychoanalysis]]
 	- [[Jungian Individuation]]
 	- [[IFS parts, blending, and self]]

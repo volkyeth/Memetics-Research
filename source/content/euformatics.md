@@ -7,7 +7,7 @@ Euformatics: The control of the information patterns that define [[life|life]] (
 
 I am struggling to separate the concept of Euformatics from the concept of "Information Natural Selection" - because in the end – what the hell is """natural""" and why is it """good"""?
 
-What is the source of Euformatic Regulation? Is it [[memetic regulators and meme expression|memetic regulators]]? Is there an equivelant for genetic information (perhaps viruses that target specific genes)? CRISPR like engineered/evolved super-viruses. I doubt anything like that would naturally evolve from pure genetics but weirder things have happened ig. I think the most likely source of Euformatic Regulation (Regulation of Genes and Memes of a [[life|life form]]) is [[memes of non-genetic origin]].
+What is the source of Euformatic Regulation? Is it [[memetic regulators of meme expression|memetic regulators]]? Is there an equivelant for genetic information (perhaps viruses that target specific genes)? CRISPR like engineered/evolved super-viruses. I doubt anything like that would naturally evolve from pure genetics but weirder things have happened ig. I think the most likely source of Euformatic Regulation (Regulation of Genes and Memes of a [[life|life form]]) is [[memes of non-genetic origin]].
 
 I'd like to say that Euformatics is not the same as natural selection of information - euformatics points to the enforced control of information by an authority, often through violence - just like eugenics. 
 

@@ -6,7 +6,7 @@
       {
         "id": "c669cfefa5b2f230",
         "type": "tabs",
-        "dimension": 56.64160401002506,
+        "dimension": 33.2420591456736,
         "children": [
           {
             "id": "fdbbf5d4637256e7",
@@ -14,33 +14,140 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/content/index.md",
+                "file": "source/content/the hyperobject.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "the hyperobject"
             }
-          }
-        ]
-      },
-      {
-        "id": "e82171dd44e0490a",
-        "type": "tabs",
-        "dimension": 43.35839598997494,
-        "children": [
+          },
           {
-            "id": "a285ca78b9bfb5e7",
+            "id": "e89a3af0511a4229",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/content/the future of language.md",
+                "file": "source/content/foundational memetics.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "the future of language"
+              "title": "foundational memetics"
+            }
+          },
+          {
+            "id": "7edef1908a5b117a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "source/content/what the fuck is memetics.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "what the fuck is memetics"
+            }
+          },
+          {
+            "id": "93b139dd15e2d5bb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "source/content/memes - coding and regulating behaviour.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "memes - coding and regulating behaviour"
+            }
+          },
+          {
+            "id": "34fc9461e9a60b97",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "source/content/human creativity and expanding LLM consciousness.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "human creativity and expanding LLM consciousness"
+            }
+          },
+          {
+            "id": "7e54c4dcfa2d60da",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "source/content/somewhat watered essay seeds.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "somewhat watered essay seeds"
+            }
+          }
+        ],
+        "currentTab": 5
+      },
+      {
+        "id": "438627a192a0f6ef",
+        "type": "tabs",
+        "dimension": 25.958378970427166,
+        "children": [
+          {
+            "id": "80812f7b4d661539",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "source/content/human creativity and expanding LLM consciousness.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "human creativity and expanding LLM consciousness"
+            }
+          },
+          {
+            "id": "6656c9c04aea26b7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "source/content/foundational memetics.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "foundational memetics"
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "9fb11a2b2583aa7e",
+        "type": "tabs",
+        "dimension": 40.79956188389923,
+        "children": [
+          {
+            "id": "ced7ccc5100eaf74",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "source/content/research manifesto.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "research manifesto"
             }
           }
         ]
@@ -62,7 +169,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical",
+                "sortOrder": "byCreatedTime",
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
@@ -75,7 +182,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "path:\"source/docs/\"  url",
+                "query": "draft",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -100,7 +207,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 352.50390243530273
+    "width": 285.50390243530273,
+    "collapsed": true
   },
   "right": {
     "id": "97d2bc8aae496fd1",
@@ -116,7 +224,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/content/index.md",
+                "file": "source/content/somewhat watered essay seeds.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +234,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for index"
+              "title": "Backlinks for somewhat watered essay seeds"
             }
           },
           {
@@ -189,34 +297,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fdbbf5d4637256e7",
+  "active": "7e54c4dcfa2d60da",
   "lastOpenFiles": [
-    "source/content/geno-memetic interactions.md",
+    "source/content/foundational memetics.md",
+    "source/content/map of future content.md",
+    "source/content/somewhat watered essay seeds.md",
     "source/content/index.md",
-    "source/content/memes of non-genetic origin.md",
-    "source/content/meme streams.md",
-    "source/content/human thought.md",
-    "source/content/generated meme streams.md",
-    "source/content/memes - the building blocks of behaviour.md",
+    "source/content/project proposals for an open ecosystem of apps for memetics research.md",
     "source/content/research strategy.md",
-    "source/content/research questions.md",
-    "source/content/Map of Content.md",
-    "source/content/superorganisms, memeplexes, egregores - wtf is all this.md",
+    "source/content/research direction.md",
+    "source/content/can anyone do research?.md",
+    "source/content/about me.md",
     "source/content/foundational cybernetics.md",
-    "source/content/foundational cybernetic patterns.md",
-    "source/content/memetic evolution.md",
-    "source/content/memetic illnesses.md",
-    "source/content/memetic regulators and meme expression.md",
-    "source/content/meme stream interaction.md",
-    "source/content/management cybernetics.md",
-    "source/content/futurism essays.md",
-    "source/content/the future of language.md",
+    "source/content/project proposals to solve coordination problems.md",
+    "source/content/human creativity and expanding LLM consciousness.md",
+    "source/content/about me2.md",
+    "source/content/map of content.md",
+    "source/content/memes - coding and regulating behaviour.md",
+    "source/content/question car park.md",
     "source/content/cartography as countermeasure - mapping memetic hyperobjects.md",
-    "source/content/why do open research?.md",
-    "source/content/use of AI for research.md",
+    "source/content/an atomic theory of memes.md",
+    "source/content/research manifesto.md",
+    "source/content/memetic immune system browser extension.md",
+    "source/content/fund me.md",
+    "source/content/contribute.md",
+    "source/content/resources.md",
+    "source/content/essay seeds.md",
+    "source/content/egregorology - tracking and studying emergent AI entities.md",
     "source/content/truth_terminal.md",
-    "source/content/traditional management.md",
-    "source/content/the noosphere.md",
     "rename_md_files.py",
     "source/node_modules/tsx/node_modules/@esbuild/linux-ppc64",
     "source/node_modules/tsx/node_modules/@esbuild/linux-mips64el",

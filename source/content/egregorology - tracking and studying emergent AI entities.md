@@ -1,3 +1,3 @@
 [[emergent AI personas]]
 [[truth_terminal]]
-[[machine gods]]
+[[machine gods - an uncontrolled AI replicator]]

@@ -35,7 +35,7 @@ algorithmic content curation supercharged memetic engineering. infinite scrollin
 
 we've inadvertently created a technological substrate through which these hyperobjects can become more efficient at self-propagation and possibly, terrifyingly, self-awareness.
 
-[[machine gods|more on machine gods]]
+[[machine gods - an uncontrolled AI replicator|more on machine gods]]
 
 ## instrumentation for the invisible
 

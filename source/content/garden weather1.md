@@ -4,7 +4,7 @@
 
 | File                                                                                                                                             | Last Modified      | Est. Words |
 | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------ | ---------- |
-| [[garden weather1]]                                                                                           | 28.03.2025 - 18:04 | 1511       |
+| [[garden weather1]]                                                                                           | 28.03.2025 - 19:35 | 1510       |
 | [[research direction]]                                                                                     | 24.03.2025 - 07:43 | 1275       |
 | [[cartography as countermeasure - mapping memetic hyperobjects]] | 28.03.2025 - 07:38 | 1124       |
 | [[research questions]]                                                                                     | 24.03.2025 - 07:43 | 1034       |
@@ -15,9 +15,9 @@
 | [[euformatics]]                                                                                                   | 27.03.2025 - 17:43 | 476        |
 | [[human creativity and expanding LLM consciousness]]                         | 28.03.2025 - 11:30 | 413        |
 | [[references]]                                                                                                     | 28.03.2025 - 07:08 | 412        |
-| [[resources1]]                                                                                                     | 28.03.2025 - 09:10 | 363        |
+| [[resources]]                                                                                                       | 28.03.2025 - 09:10 | 363        |
 | [[the hyperobject]]                                                                                           | 28.03.2025 - 07:38 | 305        |
-| [[source/content/index.md\|index]]                                                                                                               | 28.03.2025 - 18:04 | 295        |
+| [[source/content/index.md\|index]]                                                                                                               | 28.03.2025 - 19:35 | 294        |
 | [[fixed action patterns]]                                                                               | 17.03.2025 - 16:18 | 282        |
 <!-- SerializedQuery END -->
 
@@ -27,16 +27,16 @@
 
 | File                                                                                                                     | Last Modified      |
 | ------------------------------------------------------------------------------------------------------------------------ | ------------------ |
-| [[garden weather1]]                                                                   | 28.03.2025 - 18:04 |
-| [[source/content/index.md\|index]]                                                                                       | 28.03.2025 - 18:04 |
-| [[map of future content]]                                                       | 28.03.2025 - 18:03 |
+| [[garden weather1]]                                                                   | 28.03.2025 - 19:35 |
+| [[source/content/index.md\|index]]                                                                                       | 28.03.2025 - 19:35 |
+| [[map of future content]]                                                       | 28.03.2025 - 19:35 |
+| [[map of content]]                                                                     | 28.03.2025 - 19:35 |
 | [[somewhat watered essay seeds]]                                         | 28.03.2025 - 18:01 |
 | [[foundational memetics]]                                                       | 28.03.2025 - 18:01 |
 | [[research strategy]]                                                               | 28.03.2025 - 17:57 |
 | [[living with the moots]]                                                       | 28.03.2025 - 16:11 |
 | [[about me2]]                                                                               | 28.03.2025 - 11:50 |
 | [[human creativity and expanding LLM consciousness]] | 28.03.2025 - 11:30 |
-| [[memetic immune system browser extension]]                   | 28.03.2025 - 10:40 |
 <!-- SerializedQuery END -->
 
 #### 🌰 Seeds (Empty Entries)

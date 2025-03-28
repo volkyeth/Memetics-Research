@@ -7,5 +7,5 @@
 - [[the hyperobject]]
 - [[euformatics]]
 - [[AI therapy]]
-- [[machine gods]]
+- [[machine gods - an uncontrolled AI replicator]]
 - [[what are normies]]

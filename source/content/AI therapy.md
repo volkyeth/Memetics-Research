@@ -1,4 +1,3 @@
-
 the monetisation of the loneliness epidemic is real
 
 are you trying to resolve the epidemic? or are you trying to get people hooked on a drug that eases their pain? 

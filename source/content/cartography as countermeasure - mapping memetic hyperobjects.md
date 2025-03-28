@@ -21,7 +21,7 @@ all describe cognitive entities that:
 
 these aren't just metaphors. they're attempts to describe hyperobjects - entities so massively distributed in space and time that they exceed traditional comprehension but nonetheless exert force on reality. like an ant colony viewed from inside a single ant, we struggle to perceive the superstructure we simultaneously constitute and inhabit.
 
-[[the hyperobject|more about the hyperobject]]
+[[the hyperobject i'm pointing at|more about the hyperobject]]
 
 ## civilization as ecological battlefield
 

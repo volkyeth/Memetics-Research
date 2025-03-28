@@ -23,4 +23,4 @@ these regulator is formed from the interaction of an emerging subculture/egregor
 then u can talk about phenotypic expression of memes and how the environment shapes the regulators, how they bundle up into part behaviours that build up your identity. i strongly believe there's predictive power here waiting to be discovered - will free will be destroyed? "if we are the slaves of some of "our" cultural traits, isn't it time we knew it?" (Cloak 1975)
 
 Questions:
-- What are some example non-coding memes? How do memes spread? #question 
+- What are some example non-coding memes? How do those memes spread? #question 

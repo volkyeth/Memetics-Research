@@ -4,39 +4,39 @@
 
 | File                                                                                                                                             | Last Modified      | Est. Words |
 | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------ | ---------- |
-| [[garden weather1]]                                                                                           | 28.03.2025 - 19:35 | 1510       |
+| [[garden weather]]                                                                                             | 28.03.2025 - 20:18 | 1537       |
 | [[research direction]]                                                                                     | 24.03.2025 - 07:43 | 1275       |
-| [[cartography as countermeasure - mapping memetic hyperobjects]] | 28.03.2025 - 07:38 | 1124       |
+| [[cartography as countermeasure - mapping memetic hyperobjects]] | 28.03.2025 - 20:12 | 1134       |
 | [[research questions]]                                                                                     | 24.03.2025 - 07:43 | 1034       |
-| [[memes - coding and regulating behaviour]]                                           | 28.03.2025 - 07:29 | 821        |
+| [[memes - coding and regulating behaviour]]                                           | 28.03.2025 - 20:11 | 822        |
 | [[geno-memetic interactions]]                                                                       | 22.03.2025 - 18:17 | 811        |
 | [[research manifesto]]                                                                                     | 28.03.2025 - 08:44 | 744        |
+| [[machine gods - an uncontrolled AI replicator]]                                 | 28.03.2025 - 20:05 | 591        |
 | [[cybernetics]]                                                                                                   | 22.03.2025 - 16:10 | 489        |
 | [[euformatics]]                                                                                                   | 27.03.2025 - 17:43 | 476        |
-| [[human creativity and expanding LLM consciousness]]                         | 28.03.2025 - 11:30 | 413        |
+| [[human creativity and expanding LLM consciousness]]                         | 28.03.2025 - 20:10 | 431        |
 | [[references]]                                                                                                     | 28.03.2025 - 07:08 | 412        |
 | [[resources]]                                                                                                       | 28.03.2025 - 09:10 | 363        |
-| [[the hyperobject]]                                                                                           | 28.03.2025 - 07:38 | 305        |
-| [[source/content/index.md\|index]]                                                                                                               | 28.03.2025 - 19:35 | 294        |
-| [[fixed action patterns]]                                                                               | 17.03.2025 - 16:18 | 282        |
+| [[the hyperobject i'm pointing at]]                                                           | 28.03.2025 - 20:14 | 330        |
+| [[source/content/index.md\|index]]                                                                                                               | 28.03.2025 - 20:18 | 294        |
 <!-- SerializedQuery END -->
 
 #### 🌦️ Weather (Most Recent Entries)
 <!-- QueryToSerialize: TABLE dateformat(file.mtime, "dd.MM.yyyy - HH:mm") AS "Last Modified" FROM "source/content" SORT file.mtime DESC LIMIT 10 -->
 <!-- SerializedQuery: TABLE dateformat(file.mtime, "dd.MM.yyyy - HH:mm") AS "Last Modified" FROM "source/content" SORT file.mtime DESC LIMIT 10 -->
 
-| File                                                                                                                     | Last Modified      |
-| ------------------------------------------------------------------------------------------------------------------------ | ------------------ |
-| [[garden weather1]]                                                                   | 28.03.2025 - 19:35 |
-| [[source/content/index.md\|index]]                                                                                       | 28.03.2025 - 19:35 |
-| [[map of future content]]                                                       | 28.03.2025 - 19:35 |
-| [[map of content]]                                                                     | 28.03.2025 - 19:35 |
-| [[somewhat watered essay seeds]]                                         | 28.03.2025 - 18:01 |
-| [[foundational memetics]]                                                       | 28.03.2025 - 18:01 |
-| [[research strategy]]                                                               | 28.03.2025 - 17:57 |
-| [[living with the moots]]                                                       | 28.03.2025 - 16:11 |
-| [[about me2]]                                                                               | 28.03.2025 - 11:50 |
-| [[human creativity and expanding LLM consciousness]] | 28.03.2025 - 11:30 |
+| File                                                                                                                                             | Last Modified      |
+| ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------ |
+| [[garden weather]]                                                                                             | 28.03.2025 - 20:18 |
+| [[source/content/index.md\|index]]                                                                                                               | 28.03.2025 - 20:18 |
+| [[living with the moots]]                                                                               | 28.03.2025 - 20:17 |
+| [[somewhat watered essay seeds]]                                                                 | 28.03.2025 - 20:17 |
+| [[what are normies]]                                                                                         | 28.03.2025 - 20:17 |
+| [[AI therapy]]                                                                                                     | 28.03.2025 - 20:15 |
+| [[the hyperobject i'm pointing at]]                                                           | 28.03.2025 - 20:14 |
+| [[cartography as countermeasure - mapping memetic hyperobjects]] | 28.03.2025 - 20:12 |
+| [[memetics and free will]]                                                                             | 28.03.2025 - 20:11 |
+| [[memes - coding and regulating behaviour]]                                           | 28.03.2025 - 20:11 |
 <!-- SerializedQuery END -->
 
 #### 🌰 Seeds (Empty Entries)

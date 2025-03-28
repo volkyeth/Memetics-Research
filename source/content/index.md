@@ -29,7 +29,7 @@ This research is done in partnership with the [Open Research Institute](https://
 ![[map of content]]
 
 ---
-![[garden weather1]]
+![[garden weather]]
 
 ![[research questions]]
 

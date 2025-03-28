@@ -84,12 +84,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/content/resources1.md",
+                "file": "source/content/random1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "resources1"
+              "title": "random1"
             }
           }
         ],
@@ -223,7 +223,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/content/resources1.md",
+                "file": "source/content/random1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -233,7 +233,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for resources1"
+              "title": "Backlinks for random1"
             }
           },
           {
@@ -299,6 +299,7 @@
   "active": "7e54c4dcfa2d60da",
   "lastOpenFiles": [
     "source/content/index.md",
+    "source/content/resources1.md",
     "source/content/garden weather1.md",
     "source/content/map of content1.md",
     "source/content/somewhat watered essay seeds.md",
@@ -321,7 +322,6 @@
     "source/content/memetic immune system browser extension.md",
     "source/content/fund me.md",
     "source/content/contribute.md",
-    "source/content/resources1.md",
     "source/content/essay seeds.md",
     "source/content/egregorology - tracking and studying emergent AI entities.md",
     "rename_md_files.py",

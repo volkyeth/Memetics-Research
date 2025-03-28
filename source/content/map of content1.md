@@ -2,6 +2,6 @@
 
 ![[somewhat watered essay seeds]]
 
-![[random]]
+![[random1]]
 
 *also see [[map of future content]]*

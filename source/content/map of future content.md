@@ -2,4 +2,4 @@
 ![[foundational cybernetics]]
 ![[essay seeds]]
 
-*also see [[map of content]]*
+*also see [[map of content1]]*

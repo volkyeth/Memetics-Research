@@ -1,11 +1,7 @@
-> **Cybernetics** is the transdisciplinary study of circular causal processes such as feedback and recursion, where the effects of a system's actions (its outputs) return as inputs to that system, influencing subsequent action. It is concerned with general principles that are relevant across multiple contexts, including in engineering, ecological, economic, biological, cognitive and social systems and also in practical activities such as designing, learning, and managing. Cybernetics' transdisciplinary character has meant that it intersects with a number of other fields, leading to it having both wide influence and diverse interpretations.
->
-> The field is named after an example of circular causal feedback—that of steering a ship (the ancient Greek κυβερνήτης (kybernḗtēs) refers to the person who steers a ship). In steering a ship, the position of the rudder is adjusted in continual response to the effect it is observed as having, forming a feedback loop through which a steady course can be maintained in a changing environment, responding to disturbances from cross winds and tide.
->
-> Cybernetics has its origins in exchanges between numerous disciplines during the 1940s. Initial developments were consolidated through meetings such as the Macy Conferences and the Ratio Club. Early focuses included purposeful behaviour, neural networks, heterarchy, information theory, and self-organising systems. As cybernetics developed, it became broader in scope to include work in design, family therapy, management and organisation, pedagogy, sociology, the creative arts and the counterculture.
->
-> [Wikipedia](https://en.wikipedia.org/wiki/Cybernetics)
-
 [[foundational cybernetic patterns]]
 
-Cybernetics in my view is a subset of memetics that deals with a subset of memes regarding the commanding, alignment and cooperation of behaviours in an ecosystem. In greek, a "κυβερνήτης" (kybernḗtēs) is the person who steers a ship. Also "κυβέρνηση" means "government". So imo, cybernetics points not only to the studying of the feedback loops that lead to memetic evolution, but specifically to the coordination problem, the alignment problem, and all the "-cracies" (democracy, aristocracy, plutocracy etc etc etc) in other words (very very vague analogy that i need to refine incoming) if memetics is the electricity and the logic gates, cybernetics is the turing machine that runs the OS of society.
+Cybernetics in my view is a field very adjacent to memetics that deals with "commanding", alignment and cooperation of behaviours in an ecosystem. It's about studying the emergent or designed feedback loops in a memetic ecosystem or platform that constraint/guide the memetic evolution.
+
+In greek, a "κυβερνήτης" (kybernḗtēs) is the person who steers a ship. Also "κυβέρνηση" means "government". 
+
+So imo, cybernetics points not only to the studying of the feedback loops that lead to memetic evolution, but specifically to the coordination problem, the alignment problem, and all the "-cracies" (democracy, aristocracy, plutocracy etc etc etc) in other words (very very vague analogy that i need to refine incoming) if memetics is the electricity and the logic gates, cybernetics is the Turing machine that runs the OS of society.

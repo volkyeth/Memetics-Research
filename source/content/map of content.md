@@ -4,4 +4,4 @@
 
 ![[random]]
 
-*also see [[map of future content]]*
+*also see [[map of emerging content]]*

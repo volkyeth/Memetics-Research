@@ -9,7 +9,7 @@ I don't just want to write essays. I want to build/design/inspire the creation o
 - [[project proposals to solve coordination problems|improve the coordination of research teams]]
 - [[project proposals for an open ecosystem of apps for memetics research|contribute to the invention of a nooscope]]
 
-For more information regarding my long term motivations (besides innate curiosity) checkout my [[research manifesto]] and [[research strategy]], and to find out where I'm taking my research next checkout my [[research direction]], [[map of content]], and [[map of future content]].
+For more information regarding my long term motivations (besides innate curiosity) checkout my [[research manifesto]] and [[research strategy]], and to find out where I'm taking my research next checkout my [[research direction]], [[map of content]], and [[map of emerging content]].
 
 Do you like what I'm trying to do? 
 - why don't you [[fund me]]?

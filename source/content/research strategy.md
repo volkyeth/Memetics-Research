@@ -5,4 +5,3 @@ I aim to explore the impact of LLMs and modern communication networks to the com
 Also see:
 - [[can anyone do research?]]
 - [[why do open research?]]
-- [[use of AI for research]]

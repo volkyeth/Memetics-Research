@@ -4,8 +4,8 @@
 
 | File                                                                                                                                             | Last Modified      | Est. Words |
 | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------ | ---------- |
-| [[garden weather]]                                                                                             | 01.04.2025 - 21:25 | 1503       |
-| [[research direction]]                                                                                     | 01.04.2025 - 21:25 | 1275       |
+| [[garden weather]]                                                                                             | 01.04.2025 - 21:28 | 1519       |
+| [[research direction]]                                                                                     | 01.04.2025 - 21:27 | 1318       |
 | [[cartography as countermeasure - mapping memetic hyperobjects]] | 28.03.2025 - 20:12 | 1134       |
 | [[research questions]]                                                                                     | 01.04.2025 - 21:25 | 1034       |
 | [[research manifesto]]                                                                                     | 28.03.2025 - 08:44 | 744        |
@@ -18,25 +18,25 @@
 | [[the hyperobject i'm pointing at]]                                                           | 28.03.2025 - 20:14 | 330        |
 | [[memes - coding and regulating behaviour]]                                           | 01.04.2025 - 21:00 | 285        |
 | [[fixed action patterns]]                                                                               | 17.03.2025 - 16:18 | 282        |
-| [[source/content/index.md\|index]]                                                                                                               | 01.04.2025 - 21:16 | 280        |
+| [[source/content/index.md\|index]]                                                                                                               | 01.04.2025 - 21:27 | 280        |
 <!-- SerializedQuery END -->
 
 #### 🌦️ Weather (Most Recent Entries)
 <!-- QueryToSerialize: TABLE dateformat(file.mtime, "dd.MM.yyyy - HH:mm") AS "Last Modified" FROM "source/content" SORT file.mtime DESC LIMIT 10 -->
 <!-- SerializedQuery: TABLE dateformat(file.mtime, "dd.MM.yyyy - HH:mm") AS "Last Modified" FROM "source/content" SORT file.mtime DESC LIMIT 10 -->
 
-| File                                                                                                                     | Last Modified      |
-| ------------------------------------------------------------------------------------------------------------------------ | ------------------ |
-| [[garden weather]]                                                                     | 01.04.2025 - 21:25 |
-| [[references]]                                                                             | 01.04.2025 - 21:25 |
-| [[research direction]]                                                             | 01.04.2025 - 21:25 |
-| [[research questions]]                                                             | 01.04.2025 - 21:25 |
-| [[why do open research?]]                                                       | 01.04.2025 - 21:25 |
-| [[can anyone do research?]]                                                   | 01.04.2025 - 21:22 |
-| [[source/content/index.md\|index]]                                                                                       | 01.04.2025 - 21:16 |
-| [[geno-memetic interactions]]                                               | 01.04.2025 - 21:01 |
-| [[memes - coding and regulating behaviour]]                   | 01.04.2025 - 21:00 |
-| [[human creativity and expanding LLM consciousness]] | 01.04.2025 - 20:59 |
+| File                                                                                                                                                                                                   | Last Modified      |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------ |
+| [[garden weather]]                                                                                                                                                   | 01.04.2025 - 21:28 |
+| [[about me]]                                                                                                                                                               | 01.04.2025 - 21:28 |
+| [[art manifesto - capturing an emergent vibe - collaborative subconscious painting ritual]] | 01.04.2025 - 21:28 |
+| [[source/content/index.md\|index]]                                                                                                                                                                     | 01.04.2025 - 21:27 |
+| [[research direction]]                                                                                                                                           | 01.04.2025 - 21:27 |
+| [[research strategy]]                                                                                                                                             | 01.04.2025 - 21:25 |
+| [[references]]                                                                                                                                                           | 01.04.2025 - 21:25 |
+| [[research questions]]                                                                                                                                           | 01.04.2025 - 21:25 |
+| [[why do open research?]]                                                                                                                                     | 01.04.2025 - 21:25 |
+| [[can anyone do research?]]                                                                                                                                 | 01.04.2025 - 21:22 |
 <!-- SerializedQuery END -->
 
 #### 🌰 Seeds (Empty Entries)
@@ -48,14 +48,12 @@
 | [[the milenial dream]]                                                             | 29.03.2025 - 21:27 |
 | [[sport teams]]                                                                           | 28.03.2025 - 21:04 |
 | [[memetic immune system browser extension]]                   | 28.03.2025 - 10:40 |
-| [[art manifesto]]                                                                       | 28.03.2025 - 08:48 |
 | [[project proposals to solve coordination problems]] | 28.03.2025 - 08:40 |
 | [[memetic retroviruses]]                                                         | 28.03.2025 - 07:43 |
 | [[antimemetics]]                                                                         | 28.03.2025 - 07:27 |
 | [[music - the ultimate meme]]                                               | 23.03.2025 - 19:23 |
 | [[memetic sexual dimorphism]]                                               | 23.03.2025 - 10:38 |
 | [[memeplexes]]                                                                             | 22.03.2025 - 18:17 |
-| [[use of AI for research]]                                                     | 22.03.2025 - 00:28 |
 | [[memetic evolution]]                                                               | 21.03.2025 - 12:25 |
 | [[Freudian psychoanalysis]]                                                   | 21.03.2025 - 10:05 |
 | [[management cybernetics]]                                                     | 20.03.2025 - 18:10 |

@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/content/research strategy.md",
+                "file": "source/content/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "research strategy"
+              "title": "index"
             }
           },
           {
@@ -137,7 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/content/research strategy.md",
+                "file": "source/content/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +147,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for research strategy"
+              "title": "Backlinks for index"
             }
           },
           {
@@ -212,10 +212,13 @@
   },
   "active": "d9652d12cd593c84",
   "lastOpenFiles": [
-    "source/content/use of AI for research.md",
-    "source/content/research strategy.md",
-    "source/content/why do open research?.md",
+    "source/content/map of content.md",
     "source/content/index.md",
+    "source/content/experiments I want to run.md",
+    "source/content/research direction.md",
+    "source/content/research strategy.md",
+    "source/content/use of AI for research.md",
+    "source/content/why do open research?.md",
     "source/content/can anyone do research?.md",
     "tolan.md",
     "source/content/garden weather.md",
@@ -227,7 +230,6 @@
     "source/content/Authentic and inauthentic memes.md",
     "source/content/sport teams.md",
     "source/content/essays.md",
-    "source/content/experiments I want to run.md",
     "source/content/Pasted image 20250329182342.png",
     "source/content/the next news cycle.md",
     "source/content/the milenial dream.md",
@@ -237,8 +239,6 @@
     "source/content/an atomic theory of memes.md",
     "source/content/geno-memetic interactions.md",
     "source/content/memetics and free will.md",
-    "source/content/memes - coding and regulating behaviour.md",
-    "source/content/human creativity and expanding LLM consciousness.md",
     "device that monitors all TV",
     "rename_md_files.py",
     "source/node_modules/tsx/node_modules/@esbuild/linux-ppc64",

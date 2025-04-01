@@ -1,4 +1,4 @@
-something about authentic expression and "channeling" is very important. that's why i still think LLMs cant make real art - they lack that connection to the """"sacred""""
+something about authentic expression and "channeling" is very important. that's why i still think LLMs cant make """real""" art - they lack that connection to the """"sacred"""". they can only imitate outcomes.
 
 I think you can give them that connection, IN FACT, the way it will be captured is through something like the Open Research Institute (ORI). here's the spiel:
 

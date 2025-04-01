@@ -1,8 +1,4 @@
-> Behavior (American English) or **Behaviour** (British English) is the range of actions and mannerisms made by individuals, organisms, systems or artificial entities in some environment. These systems can include other systems or organisms as well as the inanimate physical environment. It is the computed response of the system or organism to various stimuli or inputs, whether internal or external, conscious or subconscious, overt or covert, and voluntary or involuntary. While some behavior is produced in response to an organism's environment (extrinsic motivation), behavior can also be the product of intrinsic motivation, also referred to as "agency" or "free will".
->
-> Taking a behavior informatics perspective, a behavior consists of actor, operation, interactions, and their properties. This can be represented as a behavior vector.
->
-> [Wikipedia](https://en.wikipedia.org/wiki/Behavior)
+ehh the following is meh meh but i'll leave it here
 
 Behaviours are [[emergence|emergent]] and [[evolution|evolving]]. A behaviour is an adaptive sequence of moves. A behaviour like a bird building a nest is composed by a bundle of [[fixed action patterns|fixed action patterns]] all put together. The pattern to pick up sticks. The pattern to stack them next to each other. The pattern to do that high up in a tree where there are no predators. The pattern to give birth where you are safe.
 

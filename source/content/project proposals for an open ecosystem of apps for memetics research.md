@@ -1,4 +1,5 @@
-[[nooscope]]
 - data ingestion: [[memetic weather stations]]
 - data visualisation and [[egregorology - tracking and studying emergent AI entities]]
 - better open content filters: [[memetic immune system browser extension]]
+- [[a browser extension]]
+- 

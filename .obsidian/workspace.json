@@ -106,7 +106,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -179,7 +179,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/content/open self-surveillance for \"\"good\"\"???.md",
+                "file": "source/content/the bodhisattvic memecomplex awakening the superorganism.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -189,7 +189,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for open self-surveillance for \"\"good\"\"???"
+              "title": "Backlinks for the bodhisattvic memecomplex awakening the superorganism"
             }
           },
           {
@@ -252,8 +252,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a61d4d605185fc0d",
+  "active": "4cd3796268380639",
   "lastOpenFiles": [
+    "source/content/open self-surveillance for \"\"good\"\"???.md",
     "notes.md",
     "source/content/index.md",
     "source/content/the bodhisattvic memecomplex awakening the superorganism.md",
@@ -261,7 +262,6 @@
     "source/content/project proposals for an open ecosystem of apps for memetics research.md",
     "source/content/why do open research?.md",
     "source/content/art manifesto - capturing an emergent vibe - collaborative subconscious painting ritual.md",
-    "source/content/open self-surveillance for \"\"good\"\"???.md",
     "source/content/memetic regulators of meme expression.md",
     "source/content/a browser extension.md",
     "source/content/memetic weather station.md",

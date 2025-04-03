@@ -1,5 +1,3 @@
-# the bodhisattvic memecomplex awakening the superorganism
-
 we're neurons in a brain that doesn't know it's a brain.
 
 imagine the chinese room experiment but with 86 billion rooms, one for each neuron in a human brain. each room contains a person following a rulebook on how to process incoming signals and what to output. none of these people understand the big picture, but collectively, they're implementing a conscious mind.

@@ -106,7 +106,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -179,7 +179,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/content/the bodhisattvic memecomplex awakening the superorganism.md",
+                "file": "source/content/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -189,7 +189,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for the bodhisattvic memecomplex awakening the superorganism"
+              "title": "Backlinks for index"
             }
           },
           {
@@ -252,12 +252,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4cd3796268380639",
+  "active": "131d0d03c0cb16b5",
   "lastOpenFiles": [
+    "source/content/the bodhisattvic memecomplex awakening the superorganism.md",
     "source/content/open self-surveillance for \"\"good\"\"???.md",
     "notes.md",
     "source/content/index.md",
-    "source/content/the bodhisattvic memecomplex awakening the superorganism.md",
     "source/content/nooscope.md",
     "source/content/project proposals for an open ecosystem of apps for memetics research.md",
     "source/content/why do open research?.md",

@@ -1,0 +1,3 @@
+sometimes i worry what i write is just pseudo-intellectual babble masquerading as profundity, and that my use of AI to write makes me somehow "lesser". 
+
+I can't spell for shit okay? also my grammar is all over the place. but I like doing synthesis of ideas, and once in a while an actionable golden nugget insight happens. so i'm gonna keep doing that, and if you don't like it go somewhere else on the internet (or DM me, please, I need some constructive negative feedbac)

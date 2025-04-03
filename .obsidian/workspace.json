@@ -97,12 +97,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/content/index.md",
+                "file": "source/content/somewhat watered essay seeds.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "somewhat watered essay seeds"
             }
           }
         ],
@@ -179,7 +179,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/content/index.md",
+                "file": "source/content/somewhat watered essay seeds.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -189,7 +189,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for index"
+              "title": "Backlinks for somewhat watered essay seeds"
             }
           },
           {
@@ -254,10 +254,10 @@
   },
   "active": "131d0d03c0cb16b5",
   "lastOpenFiles": [
+    "source/content/index.md",
     "source/content/the bodhisattvic memecomplex awakening the superorganism.md",
     "source/content/open self-surveillance for \"\"good\"\"???.md",
     "notes.md",
-    "source/content/index.md",
     "source/content/nooscope.md",
     "source/content/project proposals for an open ecosystem of apps for memetics research.md",
     "source/content/why do open research?.md",

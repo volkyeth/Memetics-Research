@@ -1,3 +1,4 @@
+- [[the bodhisattvic memecomplex awakening the superorganism]]
 - [[cartography as countermeasure - mapping memetic hyperobjects]]
 - [[human creativity and expanding LLM consciousness]]
 - [[memes - coding and regulating behaviour]]

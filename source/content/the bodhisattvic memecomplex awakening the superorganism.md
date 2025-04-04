@@ -83,3 +83,9 @@ the tools we're building - the [[nooscope]], [[why do open research?|open resear
 when we participate in collaborative sense-making, practice transparent communication, or create spaces for genuine dialogue across differences, we're not just being "good people" - we're functioning as healthy cells in a developing meta-organism.
 
 and that's a fucking wild responsibility to have.
+
+---
+
+
+
+*special thanks to [@mudscryer](https://x.com/mudscryer) for their her feedback and contributions around indigenous cultures :)*

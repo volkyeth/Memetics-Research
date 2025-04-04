@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/content/open self-surveillance for \"\"good\"\"???.md",
+                "file": "source/content/the bodhisattvic memecomplex awakening the superorganism.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "open self-surveillance for \"\"good\"\"???"
+              "title": "the bodhisattvic memecomplex awakening the superorganism"
             }
           },
           {
@@ -134,7 +134,7 @@
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -207,7 +207,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/content/research strategy.md",
+                "file": "source/content/the bodhisattvic memecomplex awakening the superorganism.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -217,7 +217,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for research strategy"
+              "title": "Backlinks for the bodhisattvic memecomplex awakening the superorganism"
             }
           },
           {
@@ -280,14 +280,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fe67714c40954fd3",
+  "active": "a61d4d605185fc0d",
   "lastOpenFiles": [
+    "source/content/open self-surveillance for \"\"good\"\"???.md",
+    "source/content/research strategy.md",
     "source/content/index.md",
     "source/content/self critique.md",
     "source/content/egregore evolution and control mechanisms.md",
     "source/content/the bodhisattvic memecomplex awakening the superorganism.md",
     "source/content/somewhat watered essay seeds.md",
-    "source/content/open self-surveillance for \"\"good\"\"???.md",
     "notes.md",
     "source/content/nooscope.md",
     "source/content/project proposals for an open ecosystem of apps for memetics research.md",
@@ -301,7 +302,6 @@
     "source/content/egregorology - tracking and studying emergent AI entities.md",
     "source/content/research direction.md",
     "source/content/map of emerging content.md",
-    "source/content/research strategy.md",
     "source/content/garden weather.md",
     "device that monitors all TV/Memetics Conference.md",
     "source/content/🌰 Seeds (Empty Entries).md",

@@ -1,13 +1,13 @@
 @use "./base.scss";
 
-// Custom styles inspired by the provided design
+// Custom styles for the research vault
 :root {
-  --purple: #7b2cbf; // Deeper purple
-  --deep-purple: #53239c; // Even deeper purple for accents
-  --magenta: #9c2376; // Deep magenta instead of pink
-  --green: #2ecc71;
+  --purple: #5e3a98;
+  --deep-purple: #4e2e8a;
+  --orange: #e67e22;
+  --teal: #26a69a;
   --white: #f9f9f9;
-  --note-border-radius: 12px;
+  --note-border-radius: 10px;
   --note-transition: all 0.3s ease;
 }
 
@@ -23,8 +23,8 @@ body {
   color: #333;
   line-height: 1.6;
   background-image: 
-      radial-gradient(rgba(156, 35, 118, 0.15) 1px, transparent 1px),
-      radial-gradient(rgba(46, 204, 113, 0.15) 1px, transparent 1px);
+      radial-gradient(rgba(94, 58, 152, 0.08) 1px, transparent 1px),
+      radial-gradient(rgba(38, 166, 154, 0.08) 1px, transparent 1px);
   background-size: 20px 20px;
   background-position: 0 0, 10px 10px;
 }
@@ -33,7 +33,7 @@ body {
 .content {
   margin: 0 auto;
   border-radius: var(--note-border-radius);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
   transition: var(--note-transition);
   background-color: white;
   padding: 2rem;
@@ -46,7 +46,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 5px;
+  width: 4px;
   height: 100%;
   background-color: var(--purple);
 }
@@ -67,7 +67,7 @@ a {
   border-bottom: none;
   
   &:hover {
-    color: var(--magenta);
+    color: var(--orange);
     border-bottom: none;
   }
   
@@ -78,7 +78,7 @@ a {
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: var(--green);
+    background-color: var(--teal);
     transform: scaleX(0);
     transition: transform 0.3s ease;
   }
@@ -94,22 +94,22 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 2rem;
   margin-bottom: 1rem;
   font-weight: 600;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
 }
 
 h1 {
-  font-size: 2.8rem;
+  font-size: 2.6rem;
   margin-top: 0;
-  text-shadow: 2px 2px 0px var(--deep-purple);
+  text-shadow: 1px 1px 0px var(--deep-purple);
 }
 
-// Blockquote styling
+// Blockquote styling - removed green tint
 blockquote {
-  border-left: 3px solid var(--green);
+  border-left: 3px solid var(--teal);
   margin-left: 0;
   padding-left: 1.5rem;
   font-style: italic;
-  background-color: rgba(46, 204, 113, 0.05);
+  background-color: rgba(94, 58, 152, 0.05);
   border-radius: 0 var(--note-border-radius) var(--note-border-radius) 0;
   padding: 15px;
   border: 1px dashed var(--purple);
@@ -119,8 +119,8 @@ blockquote {
 pre {
   border-radius: var(--note-border-radius);
   padding: 1.2rem;
-  border: 3px solid var(--magenta);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border: 2px solid var(--teal);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
 }
 
 // Table styling
@@ -130,7 +130,7 @@ table {
   margin: 1rem 0;
   border-radius: var(--note-border-radius);
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.07);
 }
 
 th, td {
@@ -139,20 +139,20 @@ th, td {
 }
 
 th {
-  background-color: rgba(123, 44, 191, 0.1);
+  background-color: rgba(94, 58, 152, 0.07);
 }
 
 // Images
 img {
-  border-radius: 8px;
+  border-radius: var(--note-border-radius);
   max-width: 100%;
   height: auto;
-  border: 3px solid var(--magenta);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border: 2px solid var(--teal);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   
   &:hover {
-    transform: scale(1.02);
+    transform: scale(1.01);
   }
 }
 
@@ -160,7 +160,7 @@ img {
 .graph {
   background-color: white;
   border-radius: var(--note-border-radius);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.07);
   padding: 1rem;
   border: 1px dashed var(--purple);
 }
@@ -168,11 +168,11 @@ img {
 // Header styling
 .page-title {
   color: var(--purple);
-  font-size: 2.5rem;
-  border-bottom: 3px solid var(--purple);
+  font-size: 2.4rem;
+  border-bottom: 2px solid var(--purple);
   padding-bottom: 20px;
   margin-bottom: 30px;
-  text-shadow: 2px 2px 0px var(--deep-purple);
+  text-shadow: 1px 1px 0px var(--deep-purple);
   display: flex;
   align-items: center;
   gap: 15px;
@@ -187,8 +187,8 @@ img {
   background-size: cover;
   background-position: center;
   border-radius: 50%;
-  border: 3px solid var(--magenta);
-  box-shadow: 0 3px 10px rgba(123, 44, 191, 0.4);
+  border: 2px solid var(--teal);
+  box-shadow: 0 3px 8px rgba(94, 58, 152, 0.3);
   flex-shrink: 0;
 }
 
@@ -208,7 +208,7 @@ img {
     left: 0;
     width: 5px;
     height: 100%;
-    background-color: var(--green);
+    background-color: var(--teal);
   }
   
   // Add margin to explorer entries
@@ -253,7 +253,7 @@ footer {
   text-align: center;
   margin-top: 40px;
   padding: 20px;
-  border-top: 2px dashed var(--magenta);
+  border-top: 1px dashed var(--teal);
   color: var(--purple);
   font-size: 0.9rem;
 }
@@ -263,10 +263,10 @@ footer {
   margin-bottom: 20px;
   
   & a {
-    color: var(--green);
+    color: var(--teal);
     
     &:hover {
-      color: var(--magenta);
+      color: var(--orange);
     }
     
     &:after {
@@ -282,13 +282,13 @@ footer {
   gap: 8px;
   
   & a {
-    background-color: rgba(123, 44, 191, 0.1);
+    background-color: rgba(94, 58, 152, 0.08);
     padding: 5px 10px;
     border-radius: 20px;
     font-size: 0.9rem;
     
     &:hover {
-      background-color: rgba(156, 35, 118, 0.15);
+      background-color: rgba(230, 126, 34, 0.1);
     }
     
     &:after {
@@ -297,10 +297,19 @@ footer {
   }
 }
 
+// Remove green tint from embeds
+.embed {
+  border: 1px solid rgba(94, 58, 152, 0.2);
+  border-radius: var(--note-border-radius);
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: rgba(94, 58, 152, 0.03);
+}
+
 // Custom scrollbar
 ::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -313,14 +322,14 @@ footer {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--magenta);
+  background: var(--orange);
 }
 
 // Add minimal dark mode styling for compatibility
 .dark {
   background-image: 
-      radial-gradient(rgba(156, 35, 118, 0.15) 1px, transparent 1px),
-      radial-gradient(rgba(46, 204, 113, 0.15) 1px, transparent 1px);
+      radial-gradient(rgba(94, 58, 152, 0.08) 1px, transparent 1px),
+      radial-gradient(rgba(38, 166, 154, 0.08) 1px, transparent 1px);
   
   .content {
     background-color: white;

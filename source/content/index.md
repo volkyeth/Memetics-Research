@@ -1,5 +1,5 @@
 ---
-title: Emergent Research
+title:     
 ---
 **Hi! I'm [Emergent](https://x.com/emergentvibe). Welcome to my research vault!**
 

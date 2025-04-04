@@ -1,3 +1,332 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+// Custom styles inspired by the provided design
+:root {
+  --purple: #7b2cbf; // Deeper purple
+  --deep-purple: #53239c; // Even deeper purple for accents
+  --magenta: #9c2376; // Deep magenta instead of pink
+  --green: #2ecc71;
+  --white: #f9f9f9;
+  --note-border-radius: 12px;
+  --note-transition: all 0.3s ease;
+}
+
+// Force light mode always
+html {
+  color-scheme: light !important;
+}
+
+// Body and general styling
+body {
+  font-family: 'Special Elite', cursive; /* Typewriter-like font */
+  background-color: var(--white);
+  color: #333;
+  line-height: 1.6;
+  background-image: 
+      radial-gradient(rgba(156, 35, 118, 0.15) 1px, transparent 1px),
+      radial-gradient(rgba(46, 204, 113, 0.15) 1px, transparent 1px);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+}
+
+// Content area styling
+.content {
+  margin: 0 auto;
+  border-radius: var(--note-border-radius);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: var(--note-transition);
+  background-color: white;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background-color: var(--purple);
+}
+
+article > * {
+  margin-bottom: 16px;
+  font-size: 1.1rem;
+}
+
+// Link styling
+a {
+  color: var(--purple);
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  padding: 0 5px;
+  transition: color 0.3s;
+  border-bottom: none;
+  
+  &:hover {
+    color: var(--magenta);
+    border-bottom: none;
+  }
+  
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--green);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  
+  &:hover:after {
+    transform: scaleX(1);
+  }
+}
+
+// Headings
+h1, h2, h3, h4, h5, h6 {
+  color: var(--purple);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: 2.8rem;
+  margin-top: 0;
+  text-shadow: 2px 2px 0px var(--deep-purple);
+}
+
+// Blockquote styling
+blockquote {
+  border-left: 3px solid var(--green);
+  margin-left: 0;
+  padding-left: 1.5rem;
+  font-style: italic;
+  background-color: rgba(46, 204, 113, 0.05);
+  border-radius: 0 var(--note-border-radius) var(--note-border-radius) 0;
+  padding: 15px;
+  border: 1px dashed var(--purple);
+}
+
+// Code blocks
+pre {
+  border-radius: var(--note-border-radius);
+  padding: 1.2rem;
+  border: 3px solid var(--magenta);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+// Table styling
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0;
+  border-radius: var(--note-border-radius);
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 0.75rem;
+  border: 1px solid var(--lightgray);
+}
+
+th {
+  background-color: rgba(123, 44, 191, 0.1);
+}
+
+// Images
+img {
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+  border: 3px solid var(--magenta);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+// Components styling
+.graph {
+  background-color: white;
+  border-radius: var(--note-border-radius);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border: 1px dashed var(--purple);
+}
+
+// Header styling
+.page-title {
+  color: var(--purple);
+  font-size: 2.5rem;
+  border-bottom: 3px solid var(--purple);
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 0px var(--deep-purple);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.page-title::before {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-image: url('https://pbs.twimg.com/profile_images/1845526578958077954/CMOOCMg5_400x400.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  border: 3px solid var(--magenta);
+  box-shadow: 0 3px 10px rgba(123, 44, 191, 0.4);
+  flex-shrink: 0;
+}
+
+// Explorer and sidebar styling
+.explorer {
+  background-color: white;
+  border-radius: var(--note-border-radius);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  position: relative;
+  overflow: hidden;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background-color: var(--green);
+  }
+  
+  // Add margin to explorer entries
+  .folder-outer {
+    margin-left: 15px;
+  }
+  
+  ul {
+    padding-left: 15px;
+  }
+  
+  li {
+    margin-left: 10px;
+  }
+  
+  // Inner container styles
+  .folder-container {
+    margin-left: 10px;
+  }
+  
+  .file-explorer-note {
+    padding-left: 15px;
+  }
+  
+  .section-tree, .section-tree-item {
+    margin-left: 10px;
+  }
+  
+  // Additional note title styles
+  .folder-container a,
+  .file-explorer-note-path,
+  .file-explorer-note a,
+  .folder > a {
+    display: block;
+    padding-left: 12px;
+    margin: 6px 0;
+  }
+}
+
+// Footer styling
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  border-top: 2px dashed var(--magenta);
+  color: var(--purple);
+  font-size: 0.9rem;
+}
+
+// Breadcrumbs
+.breadcrumbs {
+  margin-bottom: 20px;
+  
+  & a {
+    color: var(--green);
+    
+    &:hover {
+      color: var(--magenta);
+    }
+    
+    &:after {
+      background-color: var(--purple);
+    }
+  }
+}
+
+// Tags styling
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  
+  & a {
+    background-color: rgba(123, 44, 191, 0.1);
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    
+    &:hover {
+      background-color: rgba(156, 35, 118, 0.15);
+    }
+    
+    &:after {
+      display: none;
+    }
+  }
+}
+
+// Custom scrollbar
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--purple);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--magenta);
+}
+
+// Add minimal dark mode styling for compatibility
+.dark {
+  background-image: 
+      radial-gradient(rgba(156, 35, 118, 0.15) 1px, transparent 1px),
+      radial-gradient(rgba(46, 204, 113, 0.15) 1px, transparent 1px);
+  
+  .content {
+    background-color: white;
+  }
+  
+  .graph, .explorer {
+    background-color: white;
+  }
+}

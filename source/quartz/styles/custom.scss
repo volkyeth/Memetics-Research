@@ -27,6 +27,10 @@ body {
       radial-gradient(rgba(38, 166, 154, 0.08) 1px, transparent 1px);
   background-size: 20px 20px;
   background-position: 0 0, 10px 10px;
+  
+  // Override default variables to remove the left sidebar
+  --left-sidebar-width: 0px !important;
+  --sidebar-width: 0px !important;
 }
 
 // Content area styling
@@ -192,62 +196,6 @@ img {
   flex-shrink: 0;
 }
 
-// Explorer and sidebar styling
-.explorer {
-  background-color: white;
-  border-radius: var(--note-border-radius);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 1.5rem;
-  position: relative;
-  overflow: hidden;
-  
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 5px;
-    height: 100%;
-    background-color: var(--teal);
-  }
-  
-  // Add margin to explorer entries
-  .folder-outer {
-    margin-left: 15px;
-  }
-  
-  ul {
-    padding-left: 15px;
-  }
-  
-  li {
-    margin-left: 10px;
-  }
-  
-  // Inner container styles
-  .folder-container {
-    margin-left: 10px;
-  }
-  
-  .file-explorer-note {
-    padding-left: 15px;
-  }
-  
-  .section-tree, .section-tree-item {
-    margin-left: 10px;
-  }
-  
-  // Additional note title styles
-  .folder-container a,
-  .file-explorer-note-path,
-  .file-explorer-note a,
-  .folder > a {
-    display: block;
-    padding-left: 12px;
-    margin: 6px 0;
-  }
-}
-
 // Footer styling
 footer {
   text-align: center;
@@ -339,3 +287,82 @@ footer {
     background-color: white;
   }
 }
+
+/* ===== LAYOUT OVERRIDES ===== */
+
+/* Override the base grid layout */
+.page > #quartz-body {
+  width: 100%;
+  max-width: 100%;
+  
+  /* Desktop layout - wide screens */
+  @media (min-width: 1200px) {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(auto, 900px) minmax(300px, 300px) minmax(0, 1fr);
+    grid-template-areas: 
+      ". grid-header grid-sidebar-right ."
+      ". grid-center grid-sidebar-right ."
+      ". grid-footer grid-footer .";
+  }
+  
+  /* Tablet layout - medium screens */
+  @media (min-width: 800px) and (max-width: 1199px) {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(auto, 900px) minmax(0, 1fr);
+    grid-template-areas: 
+      ". grid-header ."
+      ". grid-center ."
+      ". grid-sidebar-right ."
+      ". grid-footer .";
+  }
+  
+  /* Mobile layout - small screens */
+  @media (max-width: 799px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "grid-header"
+      "grid-center"
+      "grid-sidebar-right"
+      "grid-footer";
+    padding: 0 1rem;
+  }
+}
+
+/* Position elements in the grid */
+.left.sidebar {
+  display: none !important;
+}
+
+.page-header {
+  grid-area: grid-header;
+  padding-top: 3rem;
+}
+
+.center {
+  grid-area: grid-center;
+  width: 100%;
+}
+
+.right.sidebar {
+  grid-area: grid-sidebar-right;
+  height: auto !important;
+  position: relative !important;
+  padding-top: 0 !important;
+  margin-top: 100px !important;
+  
+  @media (max-width: 1199px) {
+    margin-top: 2rem !important;
+  }
+}
+
+footer {
+  grid-area: grid-footer;
+}
+
+/* Fix any overflow issues */
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+

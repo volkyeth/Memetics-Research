@@ -1,4 +1,4 @@
-process chunks of stream of conciousness into vector embeddings track the movement of the vector in high dimensionality space, map into lower dimensions
+process chunks of stream of consciousness into vector embeddings track the movement of the vector in high dimensionality space, map into lower dimensions
 
 my guess is we'll see a diagram like this with a bunch of attractors
     

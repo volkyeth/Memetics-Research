@@ -2,6 +2,5 @@
 - [[propaganda, eumemics, and therapy]]
 - [[egregorology - tracking and studying emergent AI entities]]
 - [[review of existing memetic weaponry]]
-- [[project proposals to solve coordination problems]]
-- [[project proposals for an open ecosystem of apps for memetics research]]
+- [[apps]]
 - [[a memeplex of cybernetic patterns for open source decentralised research & development coordination]]

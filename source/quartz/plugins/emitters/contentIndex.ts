@@ -31,9 +31,9 @@ interface Options {
 const defaultOptions: Options = {
   enableSiteMap: true,
   enableRSS: true,
-  rssLimit: 10,
-  rssFullHtml: false,
-  includeEmptyFiles: true,
+  rssLimit: 100,
+  rssFullHtml: true,
+  includeEmptyFiles: false,
 }
 
 function generateSiteMap(cfg: GlobalConfiguration, idx: ContentIndex): string {

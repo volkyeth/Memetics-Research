@@ -6,5 +6,6 @@
     "source/quartz/",
     "source/raw_html/",
     "source/docs/"
-  ]
+  ],
+  "propertiesInDocument": "source"
 }

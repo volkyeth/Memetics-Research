@@ -8,7 +8,6 @@
 - what we owe the future
 - anaximander and the nature of science rovelli
 - inheritance the evolutionary origins of the modern world
-- 
 ##### talks
 - [What Darwin won't tell you about evolution - with Jonathan Pettitt - YouTube](https://www.youtube.com/watch?v=7dzoGb-jcW4)
 - [Susan Blackmore: Genes, Memes and Temes](https://iai.tv/video/genes-memes-and-temes

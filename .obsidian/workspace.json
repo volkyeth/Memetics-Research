@@ -8,17 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "131d0d03c0cb16b5",
+            "id": "6448e4bb7f15a0b2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/content/project proposals for an open ecosystem of apps for memetics research.md",
+                "file": "source/content/language trees.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "project proposals for an open ecosystem of apps for memetics research"
+              "title": "language trees"
             }
           },
           {
@@ -36,69 +36,21 @@
             }
           },
           {
-            "id": "fdbb65175c5289c6",
+            "id": "e0a34a4f4f052d07",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/content/trying to influence training data.md",
+                "file": "source/content/🌰 Seeds (Empty Entries).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "trying to influence training data"
-            }
-          },
-          {
-            "id": "f51cf99e85cee96f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "llm reasoning and neologisms.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "llm reasoning and neologisms"
-            }
-          },
-          {
-            "id": "cdfdcfa93ae0a691",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "source/content/index.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "index"
+              "title": "🌰 Seeds (Empty Entries)"
             }
           }
         ],
-        "currentTab": 4
-      },
-      {
-        "id": "a598d864d597612d",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "0d19e134129796e0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "source/content/apps.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "apps"
-            }
-          }
-        ]
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -130,7 +82,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "project proposals",
+                "query": "sexu",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -151,8 +103,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -172,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/content/index.md",
+                "file": "source/content/mapping the memetic soul toward a predictive model of human consciousness.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -182,7 +133,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for index"
+              "title": "Backlinks for mapping the memetic soul toward a predictive model of human consciousness"
             }
           },
           {
@@ -245,30 +196,41 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "cdfdcfa93ae0a691",
+  "active": "5132d302717c9075",
   "lastOpenFiles": [
-    "source/content/nooscope.md",
+    "source/content/language trees.md",
     "source/content/index.md",
-    "source/content/project proposals for an open ecosystem of apps for memetics research.md",
-    "source/content/apps.md",
-    "source/content/essay seeds.md",
+    "source/content/garden weather.md",
     "source/content/mapping the memetic soul toward a predictive model of human consciousness.md",
-    "source/content/about me.md",
-    "source/content/art manifesto - capturing an emergent vibe - collaborative subconscious painting ritual.md",
-    "source/content/research manifesto.md",
-    "source/content/CV.md",
-    "source/content/contribute.md",
-    "source/content/fund me.md",
-    "source/content/map of emerging content.md",
-    "source/content/map of content.md",
-    "source/content/experiments I want to run.md",
-    "source/content/research direction.md",
-    "source/content/research strategy.md",
-    "source/content/why do open research?.md",
-    "source/content/can anyone do research?.md",
-    "source/content/the bodhisattvic memecomplex awakening the superorganism.md",
-    "source/content/trying to influence training data.md",
-    "llm reasoning and neologisms.md",
+    "source/content/🌰 Seeds (Empty Entries).md",
+    "source/content/psycho-cybernetics.md",
+    "source/content/memetic sexual dimorphism.md",
+    "source/CODE_OF_CONDUCT.md",
+    "source/content/memetic regulators of meme expression.md",
+    "source/content/building 20.md",
+    "source/public/building-20.html",
+    "source/content/project proposals for an open ecosystem of apps for memetics research.md",
+    "source/content/resources.md",
+    "source/content/Mapping your Memome.md",
+    "source/content/the coordination-alignment problem.md",
+    "source/content/IFS parts, blending, and self.md",
+    "source/content/Horisontal Meme Transfer.md",
+    "source/content/memes of non-genetic origin.md",
+    "source/content/promemetics.md",
+    "source/content/management cybernetics.md",
+    "source/content/Freudian psychoanalysis.md",
+    "source/content/memetic evolution.md",
+    "source/content/memeplexes.md",
+    "source/content/music - the ultimate meme.md",
+    "source/content/antimemetics.md",
+    "source/content/memetic retroviruses.md",
+    "source/content/project proposals to solve coordination problems.md",
+    "source/public/language-trees.html",
+    "source/public/Untitled.html",
+    "source/public/semantic-web.html",
+    "source/public/llm-reasoning-and-neologisms.html",
+    "source/public/device-that-monitors-all-tv-radio-channels-in-a-country.html",
+    "source/public/apps.html",
     "source/public/404.html",
     "source/public/static/og-image.png",
     "source/public/static/icon.png",
@@ -279,19 +241,8 @@
     "source/public/Pasted-image-20250320095843.png",
     "source/public/index.xml",
     "source/public/sitemap.xml",
-    "source/public/🌰-Seeds-(Empty-Entries).html",
-    "source/public/world-interaction.html",
-    "source/public/why-do-open-research.html",
-    "source/public/what-are-normies.html",
-    "source/public/trying-to-influence-training-data.html",
-    "source/public/traditional-management.html",
-    "source/public/tolan.html",
     "source/public/art-gallery/Pasted-image-20250404171336.png",
     "source/public/art-gallery/Pasted-image-20250404171329.png",
-    "source/content/memes i like.md",
-    "source/content/ai helping with adhd.md",
-    "source/content/emergent AI personas.md",
-    "source/content/truth_terminal.md",
     "source/static/logo.jpg"
   ]
 }

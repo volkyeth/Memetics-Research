@@ -5,9 +5,7 @@ draft: true
 
 we're walking memeplexes in skin suits, thinking we're in control.
 
-imagine consciousness as an emergent property of competing and cooperating memetic structures - ideas, beliefs, words, and patterns colonizing neural substrate. the "self" isn't a fixed entity but a dynamic ecosystem of memetic patterns, constantly shifting and rebalancing as different memeplexes activate and inhibit each other.
-
-now what if we could map this shit?
+our current models of consciousness remain fragmented and incomplete - psychology describes behaviors, neuroscience maps brain activity, philosophy debates the nature of self. but what if we could develop a unified framework that bridges individual experience with collective dynamics? what if consciousness itself could be understood as an emergent property of memetic interactions?
 
 ## the nested architecture of consciousness
 
@@ -18,63 +16,57 @@ the self exists as a nested hierarchy of memetic structures:
 3. **parts** (IFS-style) - collections of memeplexes with specific activation functions and triggers, similar to how chromosomes package genes for coordinated expression
 4. **orchestrated self** - the emergent pattern of parts interacting under the passive observation of the witness function
 
-there's no "authentic" self hiding beneath these layers - just the characteristic pattern of how these components interact in your particular brain. the "you" that you experience is simply the collection and orchestration of parts operating at any given moment.
+there's no "authentic self" hiding beneath these layers - just the characteristic pattern of how these components interact in your particular brain. the "you" that you experience is simply the collection and orchestration of parts operating at any given moment.
 
-parts may overwhelm you, and some parts might fight for the wheel, but when parts step back and unblend, something remains - a witnessing presence with qualities of curiosity, compassion, and clarity. this "Self energy" (in IFS terms) emerges when the system is functioning optimally. what I call the "orchestrator" is a special function that helps parts step back and resolves tensions between them, working alongside this witnessing presence. many people function with blended parts without experiencing much Self energy, yet still operate effectively in the world.
+when parts step back and unblend, something remains - a witnessing presence with qualities of curiosity, compassion, and clarity. this "Self energy" (in IFS terms) emerges when the system is functioning optimally. what I call the orchestrator is a special function that helps parts step back and resolves tensions between them, working alongside this witnessing presence. many people function with blended parts without experiencing much Self energy, yet still operate effectively in the world.
 
 parts don't just exist as abstract patterns - they often resonate with specific body locations in a kind of weird synesthesia. certain memeplexes activate specific body sensations - tightness in the throat, warmth in the chest, tension in the gut. this embodied aspect connects to emerging research on vasocomputation, the idea that blood flow patterns and physiological processes contribute to cognition outside the brain.
 
-what's wilder still is that parts aren't confined to individual minds. they exist between all of us - we absorb them from others, especially our parents, and from what jung called the "collective unconscious" - or what i prefer to call the memiverse, the sea of memes, the system, society. this memiverse contains part templates that we download and customize through our experiences.
+what's wilder still is that parts aren't confined to individual minds. they exist between all of us - we absorb them from others, especially our parents, and from what jung called the "collective unconscious" - or what i prefer to call the memetic ecosystem. this shared environment contains part templates that we download and customize through our experiences.
+
+## why we need better models
+
+our current understanding of how ideas move through individuals and groups remains remarkably limited. we lack frameworks that can predict:
+
+- why certain ideas spread rapidly while others fade
+- how belief systems interact and evolve
+- why groups develop specific patterns of thought
+- how individual psychology connects to collective dynamics
+
+these aren't just academic questions. in an age of unprecedented memetic warfare and manipulation, understanding how ideas shape us - both individually and collectively - has become essential to maintaining agency and social coherence.
 
 ## mathematical formulation
 
-This entire structure can be mathematically modeled as an exploration of how memetic patterns might interact:
+to address these limitations, we can model the memetic structures mathematically - not as a complete representation of consciousness, but as a useful approximation of its dynamics:
 
----
+1. **Individual Meme Activation** $A(m_i) = \text{activation}(\sum_j (w_{ij} \times A(m_j)) - \theta_i, \alpha_i)$
 
-**Individual Meme Activation**
-$A(m_i) = \text{activation}(\sum_j (w_{ij} \times A(m_j)) - \theta_i, \alpha_i)$
+Where activation function balances categorical vs. contextual processing: $\text{activation}(x, \alpha) = (1-\alpha) \times \text{leftMode}(x) + \alpha \times \text{rightMode}(x)$
 
-Where activation function balances categorical vs. contextual processing: 
-
-$\text{activation}(x, \alpha) = (1-\alpha) \times \text{leftMode}(x) + \alpha \times \text{rightMode}(x)$
-
-[add details about the relu and sigmoid activations of the different hemispheres]
-
----
-
-**Memeplex Formation from Memes**
-$M_i = {(\vec{v}_1, p_1), (\vec{v}_2, p_2), \ldots, (\vec{v}_n, p_n)}$
+2. **Memeplex Formation from Memes** $M_i = {(\vec{v}_1, p_1), (\vec{v}_2, p_2), \ldots, (\vec{v}_n, p_n)}$
 
 Where $\vec{v}_j$ is a meme vector and $p_j$ is its probability/weight within the memeplex.
 
----
+3. **Memeplex-to-Memeplex Influence** $R(M_i) = \text{activation}(\sum_j (w_{ij} \times A(M_j)) + b_i, \alpha_{M_i})$
 
-**Memeplex-to-Memeplex Influence**
-$R(M_i) = \text{activation}(\sum_j (w_{ij} \times A(M_j)) + b_i, \alpha_{M_i})$
+4. **Competitive Activation Between Memeplexes** $A(M_i) = \text{softmax}(R(M_1), R(M_2), \ldots, R(M_n))_i = \frac{e^{R(M_i)}}{\sum_j e^{R(M_j)}}$
 
-**Competitive Activation Between Memeplexes** $A(M_i) = \text{softmax}(R(M_1), R(M_2), \ldots, R(M_n))_i = \frac{e^{R(M_i)}}{\sum_j e^{R(M_j)}}$
-
----
 
 This system of equations creates a dynamic model where memes cluster into memeplexes, which then interact through both excitatory and inhibitory connections, competing for expression in consciousness.
 
-therapeutic interventions can be understood as tuning the variables in this system - adjusting connection weights ($w_{ij}$), modifying activation thresholds ($\theta_i$), or shifting processing styles ($\alpha_i$). Effective therapy might involve weakening inhibitory connections from protector parts to exiled parts, or enhancing the activation of adaptive memeplexes.
+Therapeutic interventions can be understood as tuning the variables in this system - adjusting connection weights ($w_{ij}$), modifying activation thresholds ($\theta_i$), or shifting processing styles ($\alpha_i$). Effective therapy might involve weakening inhibitory connections from protector parts to exiled parts, or enhancing the activation of adaptive memeplexes.
 
-[remove capital leters from bellow]
 Meanwhile, the environment defines the semantic contents - the specific meme vectors that populate the system. Our experiences, culture, and relationships determine what memes are available and how they're encoded in our cognitive landscape.
 
 This is merely an exploratory model, not a claim about how human consciousness actually works. It's a left-brain approach to understanding phenomena that are ultimately more complex than any mathematical framework can fully capture. The value lies not in perfect accuracy but in creating a useful tool for thinking about these invisible dynamics.
 
-shared parts across individuals can be represented as bundles of memes in memetic space, with personal variations in the form of different probabilities, activation functions, and combinations of inhibitory and excitatory effects. this provides a way to model both individual uniqueness and our shared psychological heritage.
-
 ## implementation through journaling
+
+how might we test and refine this theoretical model? one approach would be through analyzing unfiltered streams of consciousness.
 
 imagine a journaling app where you can't press backspace - eliminating the inner critic from the writing process. by preventing editing and revision, it captures raw stream of consciousness material direct from the memetic source.
 
 this theoretical app would extract embeddings and semantic ideas from your writing and those of your friend group, processing private streams collectively while maintaining individual privacy. it could identify tensions in the shared semantic space and generate questions for the collective to answer - essentially functioning as cognitive therapy for friend groups.
-
-what makes this approach powerful is that it provides a direct window into the memetic processes as they unfold in real-time, without the filtering and editing that normally obscures them. by analyzing these unfiltered streams, we could populate the variables in our mathematical model with empirical data.
 
 ## filling in the variables
 
@@ -122,16 +114,6 @@ i'm trying to build a prototype of this system and would welcome collaboration. 
 
 clearly, this theoretical framework will require rigorous empirical validation. the journaling system described could provide data for testing specific hypotheses and potentially falsifying aspects of the model. developing experiments to verify or challenge the predictions made by this framework would be an essential next step in its development.
 
-## ethical considerations
-
-of course, this shit is straight-up memetic cartography - mapping the territory of consciousness itself. like all powerful tools, it comes with risks:
-
-- potential for manipulation and memetic engineering
-- privacy concerns about modeling someone's inner cognitive structure
-- risk of reductive determinism that ignores free will and agency
-
-but if done with consent and transparency, it offers something profound: a window into the previously invisible architecture of individual and collective consciousness.
-
 ## the bigger picture
 
 this approach reframes so much of human experience:
@@ -152,3 +134,5 @@ the memetic soul model doesn't reduce human experience; it reveals its stunning 
 the map is never the territory, but better maps lead to new discoveries. this model is merely an approximation, but perhaps with better models of our memetic nature, we might navigate both our inner landscapes and our collective challenges with greater wisdom. this framework doesn't offer liberation on its own - that requires the spiritual work of individuals - but it might provide tools that assist skilled facilitators in healing collective systems through more intelligent guidance and intervention.
 
 just as quantum mechanics uses mathematics to describe phenomena we can't directly observe, this framework attempts to model the invisible architecture of idea transmission and influence. the value isn't in perfect accuracy but in creating new ways to think about and work with these complex dynamics that shape our individual and collective experience.
+
+we began by noting that we're walking memeplexes in skin suits. perhaps by understanding the patterns of these memeplexes more clearly - both within and between us - we might walk with greater awareness, purpose, and collective harmony.

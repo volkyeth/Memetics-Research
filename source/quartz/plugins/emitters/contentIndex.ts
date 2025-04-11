@@ -1,13 +1,15 @@
+import { pipeline } from "@huggingface/transformers"
 import { Root } from "hast"
+import { toHtml } from "hast-util-to-html"
 import { GlobalConfiguration } from "../../cfg"
 import { getDate } from "../../components/Date"
+import DepGraph from "../../depgraph"
+import { i18n } from "../../i18n"
 import { escapeHTML } from "../../util/escape"
+import { extractSentences } from "../../util/extract-sentences"
 import { FilePath, FullSlug, SimpleSlug, joinSegments, simplifySlug } from "../../util/path"
 import { QuartzEmitterPlugin } from "../types"
-import { toHtml } from "hast-util-to-html"
 import { write } from "./helpers"
-import { i18n } from "../../i18n"
-import DepGraph from "../../depgraph"
 
 export type ContentIndex = Map<FullSlug, ContentDetails>
 export type ContentDetails = {
@@ -18,6 +20,12 @@ export type ContentDetails = {
   richContent?: string
   date?: Date
   description?: string
+  chunkEmbeddings: ChunkEmbedding[]
+}
+
+export type ChunkEmbedding = {
+  content: string
+  embedding: string
 }
 
 interface Options {
@@ -81,8 +89,8 @@ function generateRSSFeed(cfg: GlobalConfiguration, idx: ContentIndex, limit?: nu
       <title>${escapeHTML(cfg.pageTitle)}</title>
       <link>https://${base}</link>
       <description>${!!limit ? i18n(cfg.locale).pages.rss.lastFewNotes({ count: limit }) : i18n(cfg.locale).pages.rss.recentNotes} on ${escapeHTML(
-        cfg.pageTitle,
-      )}</description>
+    cfg.pageTitle,
+  )}</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       ${items}
     </channel>
@@ -91,6 +99,8 @@ function generateRSSFeed(cfg: GlobalConfiguration, idx: ContentIndex, limit?: nu
 
 export const ContentIndex: QuartzEmitterPlugin<Partial<Options>> = (opts) => {
   opts = { ...defaultOptions, ...opts }
+
+
   return {
     name: "ContentIndex",
     async getDependencyGraph(ctx, content, _resources) {
@@ -114,12 +124,21 @@ export const ContentIndex: QuartzEmitterPlugin<Partial<Options>> = (opts) => {
       return graph
     },
     async emit(ctx, content, _resources) {
+      const embed = await pipeline('feature-extraction', 'Xenova/all-MiniLM-L6-v2');
       const cfg = ctx.cfg.configuration
       const emitted: FilePath[] = []
       const linkIndex: ContentIndex = new Map()
+
+
       for (const [tree, file] of content) {
         const slug = file.data.slug!
         const date = getDate(ctx.cfg.configuration, file.data) ?? new Date()
+        const chunks = extractSentences(file.data.text ?? "", 64).filter((chunk) => chunk.length > 0)
+        const embeddings = chunks.length > 0 ? (await embed(chunks, { pooling: 'cls', normalize: true, quantize: true, precision: "ubinary" })).tolist().map(btoa) : [];
+        const chunkEmbeddings: ChunkEmbedding[] = chunks.map((chunk, i) => ({
+          content: chunk,
+          embedding: embeddings[i],
+        }))
         if (opts?.includeEmptyFiles || (file.data.text && file.data.text !== "")) {
           linkIndex.set(slug, {
             title: file.data.frontmatter?.title!,
@@ -131,6 +150,7 @@ export const ContentIndex: QuartzEmitterPlugin<Partial<Options>> = (opts) => {
               : undefined,
             date: date,
             description: file.data.description ?? "",
+            chunkEmbeddings
           })
         }
       }

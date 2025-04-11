@@ -69,27 +69,39 @@
       }
 
       & > * {
-        width: 100%;
-        border-radius: 7px;
+        
+        
         background: var(--light);
+        
         box-shadow:
           0 14px 50px rgba(27, 33, 48, 0.12),
           0 10px 30px rgba(27, 33, 48, 0.16);
-        margin-bottom: 2em;
+        
       }
 
       & > input {
-        box-sizing: border-box;
+        width: 100%;
         padding: 0.5em 1em;
+        box-sizing: border-box;
         font-family: var(--bodyFont);
         color: var(--dark);
         font-size: 1.1em;
         border: 1px solid var(--lightgray);
-
+        border-radius: 7px;
         &:focus {
           outline: none;
         }
       }
+
+      // Search info and headers
+      & > .search-info {
+        padding: 0.2em 1em;
+          font-size: 0.8rem;
+          color: var(--darkgray);
+          border-radius: 0 0 7px 7px;
+          margin: 0 0.5em;
+          background-color: var(--lightgray);
+        }
 
       & > #search-layout {
         display: none;
@@ -148,6 +160,27 @@
           background: color-mix(in srgb, var(--tertiary) 60%, rgba(255, 255, 255, 0));
           border-radius: 5px;
           scroll-margin-top: 2rem;
+          scroll-margin-bottom: 2rem;
+          
+          &.vector-highlight {
+            display: inline;
+            background: var(--textHighlight);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-position: 0 85%;
+            padding: 0.1rem 0.2rem;
+            margin: 0;
+            border: none;
+            border-radius: 0;
+            box-decoration-break: clone;
+            -webkit-box-decoration-break: clone;
+
+            // Add a subtle animation on hover
+            transition: background-position 0.2s ease;
+            &:hover {
+              background-position: 0 95%;
+            }
+          }
         }
 
         & > #preview-container {
@@ -225,7 +258,59 @@
             & > p {
               margin-bottom: 0;
             }
+
+            // Vector search specific styles
+            &.vector-result {
+              border-left: 3px solid var(--tertiary);
+              background-color: color-mix(in srgb, var(--tertiary) 5%, var(--light));
+              margin-bottom: 0.75rem;
+
+              & > h3 {
+                color: var(--tertiary);
+              }
+
+              & .highlight {
+                display: inline;
+                background: linear-gradient(
+                  120deg,
+                  transparent 0%,
+                  transparent 10%,
+                  color-mix(in srgb, var(--tertiary) 35%, rgba(255, 255, 255, 0)) 15%,
+                  color-mix(in srgb, var(--tertiary) 35%, rgba(255, 255, 255, 0)) 85%,
+                  transparent 90%,
+                  transparent 100%
+                );
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                background-position: 0 85%;
+                padding: 0.1rem 0.2rem;
+                margin: 0;
+                border: none;
+                border-radius: 0;
+                box-decoration-break: clone;
+                -webkit-box-decoration-break: clone;
+              }
+            }
           }
+        }
+
+        .search-results-header {
+          font-size: 0.9rem;
+          font-weight: $boldWeight;
+          color: var(--tertiary);
+          margin: 0.5rem;
+          padding: 0.25rem 0.5rem;
+          border-bottom: 1px solid color-mix(in srgb, var(--tertiary) 30%, var(--light));
+
+          & + & {
+            margin-top: 1rem;
+          }
+        }
+
+        .vector-distance {
+          font-size: 0.7rem;
+          color: var(--darkgray);
+          margin-left: 0.5rem;
         }
       }
     }

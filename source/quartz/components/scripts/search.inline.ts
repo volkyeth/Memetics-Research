@@ -569,7 +569,8 @@ document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
   async function onType(e: HTMLElementEventMap["input"]) {
     if (!searchLayout || !index) return
     currentSearchTerm = (e.target as HTMLInputElement).value
-    searchLayout.classList.toggle("display-results", currentSearchTerm !== "")
+    const term = currentSearchTerm.trim()
+    searchLayout.classList.toggle("display-results", term !== "" && term !== "#" && term !== "~" && term !== "˜")
     searchType = currentSearchTerm.startsWith("#") ? "tags" :
       currentSearchTerm.startsWith("~") ? "vector" : "basic"
 

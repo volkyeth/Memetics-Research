@@ -1,8 +1,7 @@
 # Quartz build output
 source/public/
-source/.quartz-cache
-source/.quartz-registry
-.quartz-cache
+source/quartz/.quartz-cache
+source/quartz/.quartz-registry
 
 # Obsidian
 .trash/

@@ -124,7 +124,9 @@ export const ContentIndex: QuartzEmitterPlugin<Partial<Options>> = (opts) => {
       return graph
     },
     async emit(ctx, content, _resources) {
-      const embed = await pipeline('feature-extraction', 'Xenova/all-MiniLM-L6-v2');
+      const embed = await pipeline('feature-extraction', 'Xenova/all-MiniLM-L6-v2', {
+        model_file_name: "model_quantized",
+      });
       const cfg = ctx.cfg.configuration
       const emitted: FilePath[] = []
       const linkIndex: ContentIndex = new Map()
@@ -134,10 +136,10 @@ export const ContentIndex: QuartzEmitterPlugin<Partial<Options>> = (opts) => {
         const slug = file.data.slug!
         const date = getDate(ctx.cfg.configuration, file.data) ?? new Date()
         const chunks = extractSentences(file.data.text ?? "", 64).filter((chunk) => chunk.length > 0)
-        const embeddings = chunks.length > 0 ? (await embed(chunks, { pooling: 'cls', normalize: true, quantize: true, precision: "ubinary" })).tolist().map(btoa) : [];
+        const embeddings = chunks.length > 0 ? (await embed(chunks, { pooling: 'cls', precision: "ubinary", quantize: true })).tolist() : [];
         const chunkEmbeddings: ChunkEmbedding[] = chunks.map((chunk, i) => ({
           content: chunk,
-          embedding: embeddings[i],
+          embedding: btoa(embeddings[i].join(",")),
         }))
         if (opts?.includeEmptyFiles || (file.data.text && file.data.text !== "")) {
           linkIndex.set(slug, {

@@ -332,9 +332,10 @@ document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
     itemTile.id = slug
     itemTile.href = resolveUrl(slug, textFragment).toString()
 
+    const EMBEDDING_DIMENSIONS = 384
     // Add distance indicator for vector search results
     const distanceIndicator = distance !== undefined
-      ? `<span class="vector-distance">Similarity: ${Math.round(100 - (distance / 2))}%</span>`
+      ? `<span class="vector-distance">Similarity: ${Math.round(100 - (100 * distance / EMBEDDING_DIMENSIONS))}%</span>`
       : '';
 
     // For vector results, wrap content in highlight span
@@ -685,8 +686,7 @@ async function fillDocument(data: { [key: FullSlug]: ContentDetails }) {
 // Add function to decode base64 embedding to Uint8Array
 function decodeEmbedding(embedding: string): Uint8Array {
   try {
-    const binaryString = atob(embedding);
-    return new Uint8Array(Array.from(binaryString, c => c.charCodeAt(0)));
+    return new Uint8Array(atob(embedding).split(",").map(Number));
   } catch (error) {
     console.error("Error decoding embedding:", error);
     return new Uint8Array();
@@ -703,14 +703,13 @@ async function findSimilarContent(query: string, data: { [key: FullSlug]: Conten
     const embed = await pipeline('feature-extraction', 'Xenova/all-MiniLM-L6-v2');
 
     // Embed the query
-    const queryEmbedding = await embed([query], {
+    const queryEmbedding = await embed(query, {
       pooling: 'cls',
-      normalize: true,
-      quantize: true,
-      precision: "ubinary"
+      precision: "ubinary",
+      quantize: true
     });
 
-    const queryEmbeddingUint8 = new Uint8Array(queryEmbedding.tolist()[0]);
+    const queryEmbeddingUint8 = queryEmbedding.tolist()[0];
 
     // Calculate distances for all chunks
     const results: Array<{ slug: FullSlug, distance: number, chunk: string }> = [];

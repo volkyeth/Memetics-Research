@@ -161,7 +161,7 @@ document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
   if (searchBar && !document.querySelector(".search-info")) {
     const searchInfo = document.createElement("div")
     searchInfo.className = "search-info"
-    searchInfo.innerHTML = "Tip: Use ~ for semantic vector search (e.g. ~neural networks)"
+    searchInfo.innerHTML = "Tip: Use ~ for semantic vector search (e.g. ~query) and # for tag search (e.g. #query)"
     searchBar.insertAdjacentElement('afterend', searchInfo)
   }
 

@@ -1,3 +1,4 @@
+import { pipeline } from "@huggingface/transformers"
 import FlexSearch from "flexsearch"
 import { ContentDetails } from "../../plugins/emitters/contentIndex"
 import { hammingDistance } from "../../util/hammingDistance"
@@ -696,9 +697,6 @@ function decodeEmbedding(embedding: string): Uint8Array {
 // Function to find similar content based on embeddings
 async function findSimilarContent(query: string, data: { [key: FullSlug]: ContentDetails }): Promise<Item[]> {
   try {
-    // Import the pipeline dynamically
-    const { pipeline } = await import("@huggingface/transformers");
-
     // Create the embedding model
     const embed = await pipeline('feature-extraction', 'Xenova/all-MiniLM-L6-v2');
 

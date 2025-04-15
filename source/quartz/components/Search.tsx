@@ -1,9 +1,9 @@
-import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import style from "./styles/search.scss"
+import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 // @ts-ignore
-import script from "./scripts/search.inline"
-import { classNames } from "../util/lang"
 import { i18n } from "../i18n"
+import { classNames } from "../util/lang"
+import script from "./scripts/search.inline"
 
 export interface SearchOptions {
   enablePreview: boolean
@@ -31,21 +31,38 @@ export default ((userOpts?: Partial<SearchOptions>) => {
         </button>
         <div id="search-container">
           <div id="search-space">
-            <input
-              autocomplete="off"
-              id="search-bar"
-              name="search"
-              type="text"
-              aria-label={searchPlaceholder}
-              placeholder={searchPlaceholder}
-            />
-            <div id="search-layout" data-preview={opts.enablePreview}></div>
+            <div id="search-bar-wrapper">
+              <input
+                autocomplete="off"
+                id="search-bar"
+                name="search"
+                type="text"
+                aria-label={searchPlaceholder}
+                placeholder={searchPlaceholder}
+              />
+              <div id="search-progress-bar" style="display: none;" />
+            </div>
+            {/* Container for search tip and progress bar */}
+            <div class="search-header-container">
+              <div class="search-info">
+                Tip: Use ~ for semantic vector search (e.g. ~query) and # for tag search (e.g.
+                #query)
+              </div>
+              {/* Progress bar, initially hidden */}
+            </div>
+            <div id="search-layout" data-preview={opts.enablePreview}>
+              {/* Container for search results */}
+              <div id="results-container"></div>
+              {/* Conditionally render preview container */}
+              {opts.enablePreview && <div id="preview-container"></div>}
+            </div>
           </div>
         </div>
       </div>
     )
   }
 
+  // Revert to assigning the script content string
   Search.afterDOMLoaded = script
   Search.css = style
 

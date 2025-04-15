@@ -1,4 +1,4 @@
-import { pipeline } from "@huggingface/transformers"
+import { pipeline, type FeatureExtractionPipeline, type ProgressCallback } from "@huggingface/transformers"
 import FlexSearch from "flexsearch"
 import { ContentDetails } from "../../plugins/emitters/contentIndex"
 import { hammingDistance } from "../../util/hammingDistance"
@@ -50,6 +50,112 @@ const fetchContentCache: Map<FullSlug, Element[]> = new Map()
 const contextWindowWords = 30
 const numSearchResults = 8
 const numTagResults = 5
+
+// --- State Variables ---
+let modelLoadingStatus: 'idle' | 'loading' | 'ready' = 'idle';
+let modelLoadingProgress: number = 0;
+let modelPromise: Promise<FeatureExtractionPipeline> | null = null;
+let searchProgressBar: HTMLElement | null = null;
+let embedder: FeatureExtractionPipeline | null = null;
+
+// --- Progress Callback ---
+const progressCallback: ProgressCallback = (progress) => {
+  console.log('Progress:', progress);
+  if (progress.status === 'progress' && progress.file && progress.file.endsWith('.bin')) { // Only track main model file progress
+    modelLoadingStatus = 'loading';
+    modelLoadingProgress = progress.progress ?? 0;
+    if (searchProgressBar) {
+      searchProgressBar.style.setProperty('--progress', `${modelLoadingProgress}%`);
+      searchProgressBar.style.display = 'inline-block'; // Show progress bar
+      searchProgressBar.style.animationPlayState = 'running'; // Ensure animation runs
+    }
+    // Optionally update results area with loading state
+    const results = document.getElementById("results-container");
+    if (results && searchType === 'vector') {
+      removeAllChildren(results);
+      results.innerHTML = `<div class="result-card loading-model">
+            <h3>Loading Model... (${Math.round(modelLoadingProgress)}%)</h3>
+            <p>Semantic search will be available shortly.</p>
+        </div>`;
+    }
+
+  } else if (progress.status === 'ready') {
+    modelLoadingStatus = 'ready';
+    modelLoadingProgress = 100; // Ensure it reaches 100%
+    if (searchProgressBar) {
+      searchProgressBar.style.display = 'none'; // Hide progress bar
+      searchProgressBar.style.animationPlayState = 'paused'; // Pause animation
+    }
+    // Re-trigger search if the user was waiting
+    if (searchType === 'vector' && currentSearchTerm) {
+      const searchBar = document.getElementById("search-bar") as HTMLInputElement | null;
+      if (searchBar) {
+        // Simulate input event to trigger search now that model is ready
+        console.log("Model ready, triggering search for:", currentSearchTerm)
+        searchBar.dispatchEvent(new Event('input', { bubbles: true, cancelable: true }));
+      }
+    }
+  } else if ((progress.status as any) === 'error') {
+    console.error("Model loading failed:", progress);
+    modelLoadingStatus = 'idle'; // Reset status on error
+    if (searchProgressBar) {
+      searchProgressBar.style.display = 'none';
+      searchProgressBar.style.animationPlayState = 'paused';
+    }
+    const results = document.getElementById("results-container");
+    if (results && searchType === 'vector') {
+      removeAllChildren(results);
+      results.innerHTML = `<div class="result-card error-model">
+               <h3>Model Error</h3>
+               <p>Could not load the semantic search model. Please try again later.</p>
+           </div>`;
+    }
+  }
+};
+
+
+// --- Get Embedder Function ---
+async function getEmbedder(): Promise<FeatureExtractionPipeline> {
+  if (embedder) {
+    return embedder;
+  }
+  if (modelPromise) {
+    return modelPromise;
+  }
+
+  console.log('Initializing model...');
+  modelLoadingStatus = 'loading';
+  if (searchProgressBar) {
+    searchProgressBar.style.display = 'inline-block';
+    searchProgressBar.style.setProperty('--progress', `0%`);
+    searchProgressBar.style.animationPlayState = 'running';
+  }
+
+  modelPromise = pipeline('feature-extraction', 'Xenova/all-MiniLM-L6-v2', { progress_callback: progressCallback })
+    .then(loadedPipeline => {
+      console.log('Model ready.');
+      embedder = loadedPipeline as FeatureExtractionPipeline; // Store the loaded pipeline
+      modelLoadingStatus = 'ready'; // Ensure status is ready
+      if (searchProgressBar) {
+        searchProgressBar.style.display = 'none';
+        searchProgressBar.style.animationPlayState = 'paused';
+      }
+      modelPromise = null; // Clear promise once resolved
+      return embedder;
+    })
+    .catch(error => {
+      console.error("Failed to load model:", error);
+      modelLoadingStatus = 'idle'; // Reset status on error
+      modelPromise = null; // Clear the promise
+      if (searchProgressBar) {
+        searchProgressBar.style.display = 'none';
+        searchProgressBar.style.animationPlayState = 'paused';
+      }
+      throw error; // Re-throw error to be caught by caller
+    });
+
+  return modelPromise;
+}
 
 const tokenizeTerm = (term: string) => {
   const tokens = term.split(/\s+/).filter((t) => t.trim() !== "")
@@ -155,35 +261,22 @@ document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
   const sidebar = container?.closest(".sidebar") as HTMLElement
   const searchButton = document.getElementById("search-button")
   const searchBar = document.getElementById("search-bar") as HTMLInputElement | null
+  const searchBarWrapper = document.getElementById("search-bar-wrapper") as HTMLDivElement | null
   const searchLayout = document.getElementById("search-layout")
   const idDataMap = Object.keys(data) as FullSlug[]
 
-  // Add search tip below search input
-  if (searchBar && !document.querySelector(".search-info")) {
-    const searchInfo = document.createElement("div")
-    searchInfo.className = "search-info"
-    searchInfo.innerHTML = "Tip: Use ~ for semantic vector search (e.g. ~query) and # for tag search (e.g. #query)"
-    searchBar.insertAdjacentElement('afterend', searchInfo)
-  }
+  // Get static elements directly
+  const results = document.getElementById("results-container") as HTMLDivElement | null;
+  const preview = document.getElementById("preview-container") as HTMLDivElement | null; // This might be null if enablePreview is false
+  const searchHeader = document.querySelector(".search-header-container") as HTMLDivElement | null;
+  const searchInfo = document.querySelector(".search-info") as HTMLDivElement | null;
+  // Assign searchProgressBar directly as it's now static in the component
+  searchProgressBar = document.getElementById("search-progress-bar");
 
-  const appendLayout = (el: HTMLElement) => {
-    if (searchLayout?.querySelector(`#${el.id}`) === null) {
-      searchLayout?.appendChild(el)
-    }
-  }
 
-  const enablePreview = searchLayout?.dataset?.preview === "true"
-  let preview: HTMLDivElement | undefined = undefined
+  const enablePreview = searchLayout?.dataset?.preview === "true" && preview // Check if preview element exists
+
   let previewInner: HTMLDivElement | undefined = undefined
-  const results = document.createElement("div")
-  results.id = "results-container"
-  appendLayout(results)
-
-  if (enablePreview) {
-    preview = document.createElement("div")
-    preview.id = "preview-container"
-    appendLayout(preview)
-  }
 
   function hideSearch() {
     container?.classList.remove("active")
@@ -193,6 +286,7 @@ document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
     if (sidebar) {
       sidebar.style.zIndex = "unset"
     }
+    // Check if elements exist before clearing
     if (results) {
       removeAllChildren(results)
     }
@@ -568,55 +662,169 @@ document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
 
   async function onType(e: HTMLElementEventMap["input"]) {
     if (!searchLayout || !index) return
-    currentSearchTerm = (e.target as HTMLInputElement).value
-    const term = currentSearchTerm.trim()
-    searchLayout.classList.toggle("display-results", term !== "" && term !== "#" && term !== "~" && term !== "˜")
-    searchType = currentSearchTerm.startsWith("#") ? "tags" :
-      currentSearchTerm.startsWith("~") ? "vector" : "basic"
+    const currentVal = (e.target as HTMLInputElement).value
+    const term = currentVal.trim()
 
-    let searchResults: FlexSearch.SimpleDocumentSearchResultSetUnit[]
+    // Determine search type early
+    const newSearchType = term.startsWith("#") ? "tags" :
+      term.startsWith("~") || term.startsWith("˜") ? "vector" : "basic";
+
+    // Update search term only if it has changed (excluding prefixes)
+    let newSearchTerm = term;
+    if (newSearchType === "tags" || newSearchType === "vector") {
+      newSearchTerm = term.substring(1).trim();
+    }
+
+    // Pre-emptively start model download if switching to vector search
+    if (newSearchType === 'vector' && modelLoadingStatus === 'idle') {
+      console.log("Vector prefix detected, initializing model download...");
+      getEmbedder().catch(error => {
+        console.error("Pre-emptive model initialization failed:", error);
+        // Error state will be handled later in the function if needed
+      });
+    }
+
+    // Only proceed if search term or type has actually changed, or if it's empty
+    if (newSearchTerm === currentSearchTerm && newSearchType === searchType && term !== "") {
+      console.log("Search term and type unchanged, skipping.")
+      return;
+    }
+
+    currentSearchTerm = newSearchTerm;
+    searchType = newSearchType; // Update global searchType
+
+    console.log(`Search type: ${searchType}, Term: '${currentSearchTerm}'`);
+
+
+    const shouldDisplayResults = term !== "" && term !== "#" && term !== "~" && term !== "˜";
+    searchLayout.classList.toggle("display-results", shouldDisplayResults);
+
+    let searchResults: FlexSearch.SimpleDocumentSearchResultSetUnit[] = []
     let vectorResults: Item[] = []
+    // results and preview are now potentially null, check before using
+    // const results = document.getElementById("results-container"); // Already defined above
+    // const preview = document.getElementById("preview-container"); // Already defined above
+
+
+    if (!shouldDisplayResults) {
+      if (results) removeAllChildren(results); // Clear results if search term is empty/prefix only
+      if (preview) removeAllChildren(preview);
+      return;
+    }
 
     if (searchType === "vector") {
-      // Vector similarity search
-      currentSearchTerm = currentSearchTerm.substring(1).trim()
-      vectorResults = await findSimilarContent(currentSearchTerm, data)
-
-      // Also perform regular search for comparison
-      searchResults = await index.searchAsync({
-        query: currentSearchTerm,
-        limit: numSearchResults,
-        index: ["title", "content"],
-      })
-    } else if (searchType === "tags") {
-      currentSearchTerm = currentSearchTerm.substring(1).trim()
-      const separatorIndex = currentSearchTerm.indexOf(" ")
-      if (separatorIndex != -1) {
-        // search by title and content index and then filter by tag (implemented in flexsearch)
-        const tag = currentSearchTerm.substring(0, separatorIndex)
-        const query = currentSearchTerm.substring(separatorIndex + 1).trim()
-        searchResults = await index.searchAsync({
-          query: query,
-          // return at least 10000 documents, so it is enough to filter them by tag (implemented in flexsearch)
-          limit: Math.max(numSearchResults, 10000),
-          index: ["title", "content"],
-          tag: tag,
-        })
-        for (let searchResult of searchResults) {
-          searchResult.result = searchResult.result.slice(0, numSearchResults)
+      // Always try to get the embedder - it handles initialization and loading states
+      // Call was moved earlier, but we still need to await the promise if it exists
+      // or handle the case where it failed pre-emptively.
+      try {
+        if (modelPromise) {
+          await modelPromise;
+        } else if (!embedder && modelLoadingStatus !== 'loading') {
+          // This case might happen if pre-emptive call failed before promise was set
+          await getEmbedder();
         }
-        // set search type to basic and remove tag from term for proper highlightning and scroll
-        searchType = "basic"
-        currentSearchTerm = query
-      } else {
-        // default search by tags index
+        // If embedder exists or promise resolved successfully, modelLoadingStatus should be 'ready'
+        // If loading, the check below will handle it.
+      } catch (error) {
+        console.error("Failed to initialize embedder for search:", error);
+        if (results) {
+          removeAllChildren(results);
+          results.innerHTML = `<div class="result-card error-model">
+                    <h3>Model Error</h3>
+                    <p>Could not load the semantic search model. Please try again later.</p>
+                </div>`;
+        }
+        if (preview) removeAllChildren(preview);
+        return;
+      }
+
+      // Check status *after* attempting to get embedder
+      if (modelLoadingStatus === 'ready' && currentSearchTerm) {
+        // Model is ready and there's a search term, proceed with vector search
+        console.log("Model ready, performing vector search for:", currentSearchTerm);
+        vectorResults = await findSimilarContent(currentSearchTerm, data);
+        // Also perform regular search for comparison
         searchResults = await index.searchAsync({
           query: currentSearchTerm,
           limit: numSearchResults,
-          index: ["tags"],
-        })
+          index: ["title", "content"],
+        });
+      } else if (modelLoadingStatus === 'loading') {
+        console.log("Model still loading, search deferred.");
+        if (results) { // Update loading message (progress handled by callback)
+          removeAllChildren(results);
+          results.innerHTML = `<div class="result-card loading-model">
+                    <h3>Loading Model... (${Math.round(modelLoadingProgress)}%)</h3>
+                    <p>Semantic search will be available shortly.</p>
+                </div>`;
+        }
+        if (preview) removeAllChildren(preview);
+        return; // Don't search yet
+      } else if (modelLoadingStatus !== 'ready' && !currentSearchTerm && term.startsWith('~')) {
+        // Model is not ready (or idle/error), or term is just the prefix
+        console.log("Vector search prefix used, but no search term provided or model not ready.");
+        if (modelLoadingStatus === 'idle' || modelLoadingStatus === 'error') { // Show error if applicable
+          if (results && !results.querySelector('.error-model') && !results.querySelector('.loading-model')) {
+            removeAllChildren(results);
+            results.innerHTML = `<div class="result-card error-model">
+                        <h3>Model Unavailable</h3>
+                        <p>The semantic search model failed to load or is unavailable.</p>
+                    </div>`;
+          }
+        } else if (modelLoadingStatus === 'loading' && results && !results.querySelector('.loading-model')) {
+          // Ensure loading message is shown if somehow missed
+          removeAllChildren(results);
+          results.innerHTML = `<div class="result-card loading-model">
+                    <h3>Loading Model... (${Math.round(modelLoadingProgress)}%)</h3>
+                    <p>Semantic search will be available shortly.</p>
+                </div>`;
+        }
+
+        if (results && term.startsWith('~') && !currentSearchTerm) {
+          // Clear if only prefix is typed, regardless of model state
+          removeAllChildren(results);
+        }
+        if (preview) removeAllChildren(preview);
+        return;
       }
-    } else if (searchType === "basic") {
+    } else if (searchType === "tags") {
+      // currentSearchTerm already has the tag prefix removed
+      const separatorIndex = currentSearchTerm.indexOf(" ")
+      if (separatorIndex != -1 && currentSearchTerm.substring(separatorIndex + 1).trim() !== "") {
+        // Tag + Query
+        const tag = currentSearchTerm.substring(0, separatorIndex).trim();
+        const query = currentSearchTerm.substring(separatorIndex + 1).trim();
+        console.log(`Tag search: tag='${tag}', query='${query}'`);
+        searchResults = await index.searchAsync({
+          query: query,
+          limit: Math.max(numSearchResults * 2, 10000), // Fetch more to ensure filtering works
+          index: ["title", "content"],
+          tag: tag, // Use flexsearch's tag filter
+        })
+        // Flexsearch returns results per index AND filtered by tag. We just need to limit the final count.
+        searchResults.forEach(searchResult => {
+          searchResult.result = searchResult.result.slice(0, numSearchResults)
+        });
+        // Keep searchType as "tags" but use the query for highlighting content/title
+        currentSearchTerm = query // Store query part for highlighting
+      } else if (currentSearchTerm !== "") {
+        // Pure Tag Search
+        console.log(`Tag search: pure tag='${currentSearchTerm}'`);
+        searchResults = await index.searchAsync({
+          query: currentSearchTerm,
+          limit: numSearchResults,
+          index: ["tags"], // Search only the tags index
+        })
+        // No query term for highlighting content/title
+      } else {
+        // Just '#' was typed
+        console.log("Tag search prefix used, but no tag provided.");
+        if (results) removeAllChildren(results);
+        if (preview) removeAllChildren(preview);
+        return;
+      }
+    } else if (searchType === "basic" && currentSearchTerm) {
+      console.log("Basic search:", currentSearchTerm);
       searchResults = await index.searchAsync({
         query: currentSearchTerm,
         limit: numSearchResults,
@@ -624,31 +832,86 @@ document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
       })
     }
 
+    // --- Process Results ---
     const getByField = (field: string): number[] => {
-      const results = searchResults.filter((x) => x.field === field)
-      return results.length === 0 ? [] : ([...results[0].result] as number[])
+      const fieldResults = searchResults.find((x) => x.field === field); // Use find for single field
+      return fieldResults ? [...fieldResults.result] as number[] : [];
     }
 
-    // order titles ahead of content
-    const allIds: Set<number> = new Set([
-      ...getByField("title"),
-      ...getByField("content"),
-      ...getByField("tags"),
-    ])
+    // Use a Map to store best result per ID, prioritizing title matches
+    const rankedResults = new Map<number, { field: string }>();
+    getByField("title").forEach(id => rankedResults.set(id, { field: "title" }));
+    getByField("content").forEach(id => {
+      if (!rankedResults.has(id)) {
+        rankedResults.set(id, { field: "content" });
+      }
+    });
+    // Add tag results only if it was a PURE tag search
+    if (searchType === "tags" && currentSearchTerm.indexOf(" ") === -1) {
+      getByField("tags").forEach(id => {
+        if (!rankedResults.has(id)) {
+          rankedResults.set(id, { field: "tags" });
+        }
+      });
+    }
+
+    const allIds = Array.from(rankedResults.keys());
 
     let finalResults: Item[] = []
 
-    if (searchType === "vector" && vectorResults.length > 0) {
-      // For vector search, we already highlighted the content in findSimilarContent
-      finalResults = [
-        ...vectorResults,
-        ...([...allIds].map(id => formatForDisplay(currentSearchTerm, id)))
-      ]
+    // Format results from regular/tag search
+    const regularResultsFormatted = allIds.map(id => {
+      const slug = idDataMap[id];
+      if (!data[slug]) return null; // Basic data validation
+
+      let titleHighlightTerm = currentSearchTerm;
+      let contentHighlightTerm = currentSearchTerm;
+      let tagHighlightTerm = "";
+
+      if (searchType === "tags") {
+        const separatorIndex = term.substring(1).trim().indexOf(" "); // Use original input 'term' for logic
+        if (separatorIndex !== -1) {
+          // Tag + Query
+          tagHighlightTerm = term.substring(1, separatorIndex + 1).trim();
+          titleHighlightTerm = term.substring(separatorIndex + 2).trim();
+          contentHighlightTerm = titleHighlightTerm;
+        } else {
+          // Pure Tag
+          tagHighlightTerm = term.substring(1).trim();
+          titleHighlightTerm = ""; // No highlighting for title/content in pure tag search
+          contentHighlightTerm = "";
+        }
+        console.log(`Formatting tag result: tagTerm='${tagHighlightTerm}', queryTerm='${contentHighlightTerm}'`)
+        return {
+          id,
+          slug,
+          title: titleHighlightTerm ? highlight(titleHighlightTerm, data[slug].title ?? "") : data[slug].title,
+          content: contentHighlightTerm ? highlight(contentHighlightTerm, data[slug].content ?? "", true) : "", // Don't show content snippet for pure tag search maybe? Or show non-highlighted?
+          tags: highlightTags(tagHighlightTerm, data[slug].tags), // Always highlight tags based on tagTerm
+        };
+      } else {
+        // Basic or Vector (where regular results are also shown)
+        return formatForDisplay(currentSearchTerm, id); // Use original formatForDisplay for basic
+      }
+    }).filter(item => item !== null) as Item[];
+
+
+    if (searchType === "vector" && modelLoadingStatus === 'ready') {
+      // Combine vector results (already formatted) and regular results
+      // Filter out duplicates based on slug, prioritizing vector results
+      const regularResultsFiltered = regularResultsFormatted.filter(regResult =>
+        !vectorResults.some(vecResult => vecResult.slug === regResult.slug)
+      );
+      finalResults = [...vectorResults, ...regularResultsFiltered];
+      console.log(`Combined ${vectorResults.length} vector and ${regularResultsFiltered.length} regular results.`);
     } else {
-      finalResults = [...allIds].map(id => formatForDisplay(currentSearchTerm, id))
+      // Basic or Tag search results
+      finalResults = regularResultsFormatted;
+      console.log(`Displaying ${finalResults.length} ${searchType} results.`);
     }
 
-    await displayResults(finalResults)
+    // Display combined/formatted results
+    await displayResults(finalResults);
   }
 
   document.addEventListener("keydown", shortcutHandler)
@@ -688,37 +951,92 @@ async function fillDocument(data: { [key: FullSlug]: ContentDetails }) {
 // Add function to decode base64 embedding to Uint8Array
 function decodeEmbedding(embedding: string): Uint8Array {
   try {
-    return new Uint8Array(atob(embedding).split(",").map(Number));
+    // Decode base64, then handle potential comma separation (robustness)
+    const decodedString = atob(embedding);
+    // Check if it looks like comma-separated numbers
+    if (/^[\d,-.]+$/.test(decodedString)) {
+      return new Uint8Array(decodedString.split(",").map(Number));
+    } else {
+      // Assume it's a raw byte string
+      return new Uint8Array(Array.from(decodedString).map(char => char.charCodeAt(0)));
+    }
   } catch (error) {
-    console.error("Error decoding embedding:", error);
-    return new Uint8Array();
+    console.error("Error decoding embedding:", error, "Input (first 50 chars):", embedding.substring(0, 50));
+    return new Uint8Array(); // Return empty array on error
   }
 }
 
 // Function to find similar content based on embeddings
 async function findSimilarContent(query: string, data: { [key: FullSlug]: ContentDetails }): Promise<Item[]> {
-  try {
-    // Create the embedding model
-    const embed = await pipeline('feature-extraction', 'Xenova/all-MiniLM-L6-v2');
+  if (modelLoadingStatus !== 'ready' || !embedder) {
+    console.warn("findSimilarContent called but model is not ready.");
+    return []; // Should not happen if onType logic is correct, but safeguard
+  }
+  if (!query) {
+    console.log("Empty query provided to findSimilarContent.");
+    return [];
+  }
 
+  try {
+    console.log("Embedding query:", query)
     // Embed the query
-    const queryEmbedding = await embed(query, {
+    const queryEmbeddingResult = await embedder(query, { // Use the stored embedder instance
       pooling: 'cls',
-      precision: "ubinary",
-      quantize: true
+      precision: "ubinary", // Match the precision used during indexing
+      quantize: true // Match quantization used during indexing
     });
 
-    const queryEmbeddingUint8 = queryEmbedding.tolist()[0];
+    // Check if the result is valid and has the expected structure
+    if (!queryEmbeddingResult || typeof queryEmbeddingResult.tolist !== 'function' || !queryEmbeddingResult.dims || queryEmbeddingResult.dims.length < 2) {
+      console.error('Invalid query embedding result structure:', queryEmbeddingResult);
+      return [];
+    }
+
+    const queryEmbeddingList = queryEmbeddingResult.tolist();
+    if (!Array.isArray(queryEmbeddingList) || queryEmbeddingList.length === 0 || !Array.isArray(queryEmbeddingList[0])) {
+      console.error('Invalid query embedding result tolist():', queryEmbeddingList);
+      return [];
+    }
+
+    // Explicitly create Uint8Array
+    const queryEmbeddingUint8 = new Uint8Array(queryEmbeddingList[0]);
+
+
+    // Validate the query embedding
+    if (!queryEmbeddingUint8 || queryEmbeddingUint8.length === 0) {
+      console.error('Failed to generate valid query embedding (empty array).');
+      return [];
+    }
+    const expectedDim = queryEmbeddingResult.dims[1]; // Get expected dimensions
+    console.log(`Query embedded. Dimensions: ${expectedDim}`);
+
 
     // Calculate distances for all chunks
     const results: Array<{ slug: FullSlug, distance: number, chunk: string }> = [];
 
     for (const [slug, fileData] of Object.entries<ContentDetails>(data)) {
-      if (!fileData.chunkEmbeddings || fileData.chunkEmbeddings.length === 0) continue;
+      // Ensure chunkEmbeddings exist and is an array
+      if (!fileData.chunkEmbeddings || !Array.isArray(fileData.chunkEmbeddings) || fileData.chunkEmbeddings.length === 0) continue;
 
       for (const chunkData of fileData.chunkEmbeddings) {
+        // Ensure chunkData has embedding and content properties
+        if (!chunkData || typeof chunkData.embedding !== 'string' || typeof chunkData.content !== 'string') {
+          console.warn(`Skipping invalid chunkData for slug ${slug}:`, chunkData);
+          continue;
+        }
+
         try {
           const chunkEmbeddingUint8 = decodeEmbedding(chunkData.embedding);
+          // Validate the chunk embedding
+          if (!chunkEmbeddingUint8 || chunkEmbeddingUint8.length === 0) {
+            console.warn(`Skipping chunk for slug ${slug} due to empty embedding after decoding.`);
+            continue;
+          }
+          if (chunkEmbeddingUint8.length !== expectedDim) {
+            console.warn(`Skipping chunk for slug ${slug} due to mismatched embedding dimensions. Expected: ${expectedDim}, Got: ${chunkEmbeddingUint8.length}. Content: ${chunkData.content.substring(0, 30)}...`);
+            continue; // Skip if dimensions mismatch
+          }
+
           const distance = hammingDistance(queryEmbeddingUint8, chunkEmbeddingUint8);
 
           results.push({
@@ -727,56 +1045,71 @@ async function findSimilarContent(query: string, data: { [key: FullSlug]: Conten
             chunk: chunkData.content
           });
         } catch (error) {
-          console.error(`Error processing embedding for ${slug}:`, error);
+          console.error(`Error processing embedding for ${slug}, chunk: ${chunkData.content.substring(0, 50)}...`, error);
         }
       }
     }
+    console.log(`Calculated distances for ${results.length} chunks.`);
+
 
     // Sort by distance (smaller is better)
     results.sort((a, b) => a.distance - b.distance);
 
-    // Deduplicate by source document
-    const seen = new Set<FullSlug>();
-    const deduplicated = results.filter(result => {
-      if (seen.has(result.slug)) return false;
-      seen.add(result.slug);
-      return true;
-    });
+    // Deduplicate by source document, keeping the best score (lowest distance) for each document
+    const bestResultsPerSlug = new Map<FullSlug, { distance: number, chunk: string }>();
+    for (const result of results) {
+      if (!bestResultsPerSlug.has(result.slug) || result.distance < bestResultsPerSlug.get(result.slug)!.distance) {
+        bestResultsPerSlug.set(result.slug, { distance: result.distance, chunk: result.chunk });
+      }
+    }
+
+    // Convert map back to array and sort again (as map iteration order isn't guaranteed for sorting)
+    const deduplicatedSorted = Array.from(bestResultsPerSlug.entries())
+      .map(([slug, data]) => ({ slug, ...data }))
+      .sort((a, b) => a.distance - b.distance);
+
+    console.log(`Deduplicated to ${deduplicatedSorted.length} results.`);
+
 
     // Take top 5
-    const topResults = deduplicated.slice(0, 5);
+    const topResults = deduplicatedSorted.slice(0, 5);
 
     // Format results for display
     return topResults.map(result => {
       // Get first and last words from the chunk for text fragment
       const words = result.chunk.trim().split(/\s+/);
-      if (words.length < 1) return null;
+      if (words.length < 1) return null; // Should not happen with valid chunks
 
-      const firstWords = words.slice(0, Math.min(3, words.length)).join(' ');
-      const lastWords = words.length > 3
-        ? words.slice(Math.max(words.length - 3, 0)).join(' ')
+      const firstWords = words.slice(0, Math.min(5, words.length)).join(' '); // Use more words for robustness
+      const lastWords = words.length > 5
+        ? words.slice(Math.max(words.length - 5, 0)).join(' ')
         : firstWords;
 
-      // Create text fragment with start and end text
-      const textFragment = "#:~:text=" +
-        encodeURIComponent(firstWords) +
-        "," +
-        encodeURIComponent(lastWords);
+
+      // Create text fragment with start and end text, ensure encoding
+      const textFragment = `#:~:text=${encodeURIComponent(firstWords)}${words.length > 5 ? ',' + encodeURIComponent(lastWords) : ''}`;
+
+
+      // Ensure data for the slug exists before accessing title/tags
+      if (!data[result.slug]) {
+        console.warn(`Data not found for slug ${result.slug} when formatting vector results.`);
+        return null;
+      }
 
       return {
         id: -1, // Use negative IDs to distinguish from regular search results
         slug: result.slug, // Keep the original slug
         textFragment, // Store fragment separately
-        title: data[result.slug].title,
+        title: data[result.slug].title ?? "Untitled", // Provide default title
         content: result.chunk, // Keep original content for preview
-        tags: data[result.slug].tags,
+        tags: data[result.slug].tags ?? [], // Provide default empty tags array
         distance: result.distance,
         firstWords, // Store for preview highlighting
         lastWords, // Store for preview highlighting
       };
-    }).filter(Boolean) as Item[];
+    }).filter(Boolean) as Item[]; // Filter out any nulls from formatting or data issues
   } catch (error) {
-    console.error("Error in vector search:", error);
-    return [];
+    console.error("Error in vector search execution:", error);
+    return []; // Return empty array on error
   }
 }

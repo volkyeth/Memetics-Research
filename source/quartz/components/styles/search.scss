@@ -1,5 +1,14 @@
 @use "../../styles/variables.scss" as *;
 
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .search {
   min-width: fit-content;
   max-width: 14rem;
@@ -64,51 +73,80 @@
       margin-left: auto;
       margin-right: auto;
 
+      & > #search-bar-wrapper {
+        position: relative;
+        & > #search-bar {
+          width: 100%;
+          padding: 0.5em 1em;
+          box-sizing: border-box;
+          font-family: var(--bodyFont);
+          color: var(--dark);
+          font-size: 1.1em;
+          border: 1px solid var(--lightgray);
+          border-radius: 7px;
+          &:focus {
+            outline: none;
+          }
+          box-shadow:
+            0 14px 50px rgba(27, 33, 48, 0.12),
+            0 10px 30px rgba(27, 33, 48, 0.16);
+        }
+
+        & > #search-progress-bar {
+          position: absolute;
+          right: 0.5em;
+          top: 50%;
+          translate: 0 -50%;
+          width: 1.2rem;
+          height: 1.2rem;
+          border-radius: 50%;
+          border: 3px solid var(--lightgray); // Slightly thicker border
+          border-top-color: var(--secondary); // Spinner color
+          border-right-color: var(--secondary); // Make it look more like a spinner
+          display: none; // Initially hidden (controlled by JS)
+          animation: spin 1s linear infinite; // Simple spin animation
+          animation-play-state: paused; // Start paused (controlled by JS)
+          flex-shrink: 0; // Prevent shrinking
+        }
+      }
+
       @media all and ($desktop) {
         width: 90%;
       }
 
-      & > * {
-        
-        
-        background: var(--light);
-        
-        box-shadow:
-          0 14px 50px rgba(27, 33, 48, 0.12),
-          0 10px 30px rgba(27, 33, 48, 0.16);
-        
-      }
+      // Search info and progress container
+      & > .search-header-container {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem; // Space between items
+        margin-bottom: 1.5rem; // Add some space below
 
-      & > input {
-        width: 100%;
-        padding: 0.5em 1em;
-        box-sizing: border-box;
-        font-family: var(--bodyFont);
-        color: var(--dark);
-        font-size: 1.1em;
-        border: 1px solid var(--lightgray);
-        border-radius: 7px;
-        &:focus {
-          outline: none;
-        }
-      }
-
-      // Search info and headers
-      & > .search-info {
-        padding: 0.2em 1em;
+        // Search info and headers
+        & > .search-info {
+          flex-grow: 1;
+          padding: 0.2em 1em;
           font-size: 0.8rem;
           color: var(--darkgray);
           border-radius: 0 0 7px 7px;
           margin: 0 0.5em;
           background-color: var(--lightgray);
+          box-shadow:
+            0px 2px 7px 4px rgba(27, 33, 48, 0.12),
+            0 8px 24px rgba(27, 33, 48, 0.16);
         }
+      }
 
       & > #search-layout {
         display: none;
         flex-direction: row;
         border: 1px solid var(--lightgray);
+        border-radius: 7px;
         flex: 0 0 100%;
+        background-color: var(--light);
         box-sizing: border-box;
+        box-shadow:
+          0 14px 50px rgba(27, 33, 48, 0.12),
+          0 10px 30px rgba(27, 33, 48, 0.16);
 
         &.display-results {
           display: flex;
@@ -161,7 +199,7 @@
           border-radius: 5px;
           scroll-margin-top: 2rem;
           scroll-margin-bottom: 2rem;
-          
+
           &.vector-highlight {
             display: inline;
             background: var(--textHighlight);
@@ -205,7 +243,6 @@
 
         & > #results-container {
           overflow-y: auto;
-
           & .result-card {
             overflow: hidden;
             padding: 1em;
@@ -291,19 +328,6 @@
                 -webkit-box-decoration-break: clone;
               }
             }
-          }
-        }
-
-        .search-results-header {
-          font-size: 0.9rem;
-          font-weight: $boldWeight;
-          color: var(--tertiary);
-          margin: 0.5rem;
-          padding: 0.25rem 0.5rem;
-          border-bottom: 1px solid color-mix(in srgb, var(--tertiary) 30%, var(--light));
-
-          & + & {
-            margin-top: 1rem;
           }
         }
 
